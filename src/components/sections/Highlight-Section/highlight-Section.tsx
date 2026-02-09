@@ -26,7 +26,7 @@ const HighlightSection = () => {
         <div className="flex justify-center gap-5 mb-20 flex-wrap">
           <Link
             href="/spree-5"
-            className="px-7 py-3 rounded-lg bg-blue-900 text-white font-semibold hover:bg-blue-800 transition"
+            className="px-7 py-3 rounded-lg bg-slate-900 text-white font-semibold hover:bg-blue-800 transition"
           >
             Check out Spree 5
           </Link>

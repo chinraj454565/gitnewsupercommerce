@@ -1,102 +1,155 @@
+"use client";
+
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { Swiper ,SwiperSlide } from "swiper/react";
+import { Autoplay, FreeMode  } from "swiper/modules";
+
+import "swiper/css";
+
 
 const Hero = () => {
   return (
-    <section className="relative w-full py-20 overflow-hidden bg-white">
-      <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row items-center">
-        {/* Left Content Column */}
-        <div className="lg:w-2/3 z-10">
-          <p className="text-sm font-bold tracking-widest text-gray-500 uppercase mb-4">
+    <section className="relative w-full bg-white pt-32 pb-28 overflow-hidden">
+
+      {/* WIDER container like original */}
+      <div className="max-w-[1480px] mx-auto px-8 flex relative">
+
+        {/* Left Content */}
+        <div className="w-[68%] z-10">
+
+          {/* Label */}
+          <p className="text-xs font-bold tracking-[0.25em] text-gray-500 uppercase mb-6">
             Spree Commerce
           </p>
-          <h1 className=" lg:text-5xl font-medium text-slate-900 leading-tight mb-6">
-            Spree is an open-source <br />
-            eCommerce framework <br />
-            giving you full control and <br />
-            customizability
+
+          {/* Heading (NO <br/>) */}
+          <h1 className="text-[54px] font-normal text-[#0a1a2f] leading-[1.15] mb-8 max-w-[820px]">
+            Spree is an open-source eCommerce framework giving you full control
+            and customizability
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mb-10 leading-relaxed">
+
+          {/* Description */}
+          <p className="text-lg text-gray-600 max-w-[720px] mb-12 leading-relaxed">
             Community Edition is free. Enterprise Edition comes with more
             features, more security, more integrations. Go live faster and get
             all the latest improvements first.
           </p>
 
-          <div className="flex flex-wrap gap-4 mb-12">
+          {/* Buttons */}
+          <div className="flex gap-4 mb-14">
+
             <Link
               href="#"
-              className="bg-slate-900 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-slate-800 transition-all"
+              className="bg-[#0a1a2f] text-white px-7 py-3 rounded-lg font-semibold hover:bg-[#132c4d] transition"
             >
               Get started
             </Link>
+
             <Link
               href="#"
-              className="bg-white border border-gray-100 text-slate-900 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-50 transition-all shadow-sm"
+              className="bg-white border border-gray-200 text-[#0a1a2f] px-7 py-3 rounded-lg font-semibold hover:bg-gray-50 transition"
             >
               See demo
             </Link>
+
           </div>
 
-          {/* Trust Pilot / Users section */}
-          <p className="text-xs font-bold text-gray-400 uppercase tracking-tighter mb-6">
+          {/* Used By */}
+          <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-6">
             Used by over 5k businesses worldwide
           </p>
 
-          {/* Running Company Logo Slider (Swiper) */}
-          <div className="relative w-full overflow-hidden h-12">
-            <div className="flex items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-500">
-              {/* These match the logos from your inspect code */}
+          {/* Logos Marquee */}
+<div className="relative w-full overflow-hidden h-10 mt-2">
+
+<div className="flex animate-marquee items-center gap-[56px] opacity-40 whitespace-nowrap">
+
+  {/* First Set */}
+  {[
+    "mitchells",
+    "on-cloud",
+    "godaddy",
+    "square_logo-small",
+    "bonobos",
+    "bookshop",
+    "goop",
+    "huckberry",
+    "kfc",
+  ].map((item, i) => (
+    <img
+      key={i}
+      src={
+        item === "square_logo-small"
+          ? "https://spreecommerce.org/wp-content/uploads/2025/12/Square_logo-small.svg"
+          : `https://spreecommerce.org/wp-content/uploads/2024/07/${item}.svg`
+      }
+      alt={item}
+      className="h-5"
+    />
+  ))}
+
+  {/* Duplicate Set (IMPORTANT for infinite) */}
+  {/* {[
+    "mitchells",
+    "on-cloud",
+    "intellum",
+    "ufc-ignite",
+    "godaddy",
+    "square_logo-small",
+    "bonobos",
+    "bookshop",
+    "goop",
+    "huckberry",
+    "kfc",
+  ].map((item, i) => (
+    <img
+      key={`dup-${i}`}
+      src={
+        item === "square_logo-small"
+          ? "https://spreecommerce.org/wp-content/uploads/2025/12/Square_logo-small.svg"
+          : `https://spreecommerce.org/wp-content/uploads/2024/07/${item}.svg`
+      }
+      alt={item}
+      className="h-5"
+    />
+  ))} */}
+
+</div>
+</div>
+
+
+
+        </div>
+
+        {/* RIGHT Spree 5 Card (Exact Position) */}
+        <div className="absolute right-[120px] top-[120px]">
+
+          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm w-[230px] relative">
+
+            <div className="absolute top-4 right-4 bg-[#e6edf5] p-2 rounded-md">
               <img
-                src="https://spreecommerce.org/wp-content/uploads/2024/07/mitchells.svg"
-                alt="Mitchells"
-                className="h-6"
-              />
-              <img
-                src="https://spreecommerce.org/wp-content/uploads/2024/07/on-cloud.svg"
-                alt="On Cloud"
-                className="h-6"
-              />
-              <img
-                src="https://spreecommerce.org/wp-content/uploads/2025/09/intellum.svg"
-                alt="Intellum"
-                className="h-6"
-              />
-              <img
-                src="https://spreecommerce.org/wp-content/uploads/2025/09/ufc-ignite.svg"
-                alt="UFC"
-                className="h-6"
-              />
-              <img
-                src="https://spreecommerce.org/wp-content/uploads/2024/07/godaddy.svg"
-                alt="GoDaddy"
-                className="h-6"
+                src="https://spreecommerce.org/wp-content/themes/spree/images/arrow-right-top.svg"
+                alt="Arrow"
+                className="w-4 h-4"
               />
             </div>
+
+            <span className="text-[24px] text-[#4d79a7] font-light">
+              Spree
+            </span>
+
+            <div className="text-[120px] font-semibold leading-none bg-gradient-to-b from-[#4d79a7] to-[#122b46] bg-clip-text text-transparent">
+              5
+            </div>
+
+            <p className="text-sm font-bold text-[#0a1a2f] mt-2 leading-tight">
+              The Biggest <br /> Release Ever
+            </p>
+
           </div>
         </div>
 
-        {/* Right Floating "5" Column */}
-        <div className="hidden lg:block absolute right-6 top-32 w-[200px]">
-          <div className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm flex flex-col items-start transition-transform hover:scale-105 cursor-pointer relative">
-            <div className="absolute top-4 right-4 bg-[#dee7f0] p-2 rounded-lg">
-              <img
-                src="https://spreecommerce.org/wp-content/themes/spree/images/arrow-right-top.svg"
-                alt="Link Arrow"
-                className="w-6 h-6"
-              />
-            </div>
-            <span className="text-[26px] text-[#4d79a7] font-light leading-none">
-              Spree
-            </span>
-            <span className="text-[130px] font-semibold leading-none bg-gradient-to-b from-[#4d79a7] to-[#122b46] bg-clip-text text-transparent">
-              5
-            </span>
-            <div className="text-[14px] font-bold leading-tight mt-2 text-[#0a1a2f]">
-              The Biggest Release Ever
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
