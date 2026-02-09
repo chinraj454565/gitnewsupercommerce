@@ -1,19 +1,25 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <header className="w-full font-sans">
+    // Fixed: Added 'sticky top-0 z-50 bg-white' to make it static/sticky
+    <header className="w-full font-sans sticky top-0 z-50 bg-white shadow-sm">
       {/* 1. Announcement Bar */}
-      <div className="w-full bg-black text-white py-2 px-4 flex justify-center items-center text-sm font-medium border-b border-gray-800">
+      <div className="w-full bg-black text-white py-2 px-4 flex justify-center items-center text-xs md:text-sm font-medium border-b border-gray-800">
         <Link
           href="#"
-          className="flex items-center hover:opacity-80 transition-opacity"
+          className="flex items-center hover:opacity-80 transition-opacity text-center"
         >
-          <span className="font-bold mr-1">Spree 5.3:</span>
-          <span>Price Lists, Customer Groups, Events & Subscribers Engine</span>
+          <span className="font-bold mr-1 whitespace-nowrap">Spree 5.3:</span>
+          <span className="truncate">
+            Price Lists, Customer Groups & Subscribers
+          </span>
           <svg
-            className="ml-2 w-4 h-4"
+            className="ml-2 w-4 h-4 flex-shrink-0"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -31,31 +37,26 @@ const Header = () => {
       {/* 2. Main Navigation Bar */}
       <div className="max-w-7xl mx-auto px-4 h-20 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <div className="w-20 h-20  rounded flex items-center justify-center">
-            <img
-              src={
-                "https://spreecommerce.org/wp-content/themes/spree/images/logo.svg"
-              }
-              //   className="text-white font-bold text-xl"
-            />
-          </div>
-        </div>
+        <Link href="/" className="flex items-center flex-shrink-0">
+          <img
+            src="https://spreecommerce.org/wp-content/themes/spree/images/logo.svg"
+            alt="Spree Logo"
+            className="h-10 w-auto"
+          />
+        </Link>
 
-        {/* Navigation Links */}
-        <nav className="hidden md:flex items-center bg-gray-100 rounded-full px-6 py-2 space-x-8 text-sm font-medium text-gray-700">
-          <button className="flex items-center hover:text-black">
-            Platform <span className="ml-1 text-xs">+</span>
-          </button>
-          <button className="flex items-center hover:text-black">
-            Solutions <span className="ml-1 text-xs">+</span>
-          </button>
-          <button className="flex items-center hover:text-black">
-            Developers <span className="ml-1 text-xs">+</span>
-          </button>
-          <button className="flex items-center hover:text-black">
-            Documentation <span className="ml-1 text-xs">+</span>
-          </button>
+        {/* Desktop Navigation Links */}
+        <nav className="hidden lg:flex items-center bg-gray-100 rounded-full px-6 py-2 space-x-6 text-sm font-medium text-gray-700">
+          {["Platform", "Solutions", "Developers", "Documentation"].map(
+            (item) => (
+              <button
+                key={item}
+                className="flex items-center hover:text-black whitespace-nowrap"
+              >
+                {item} <span className="ml-1 text-xs text-gray-400">+</span>
+              </button>
+            ),
+          )}
           <Link href="#" className="hover:text-black">
             Enterprise
           </Link>
@@ -65,9 +66,9 @@ const Header = () => {
         </nav>
 
         {/* Action Buttons */}
-        <div className="flex items-center space-x-4">
-          {/* Search */}
-          <div className="hidden lg:flex items-center bg-gray-100 rounded-full px-4 py-2 text-gray-400 w-48">
+        <div className="flex items-center space-x-3">
+          {/* Desktop Search */}
+          <div className="hidden xl:flex items-center bg-gray-100 rounded-full px-4 py-2 text-gray-400 w-40">
             <svg
               className="w-4 h-4 mr-2"
               fill="none"
@@ -86,7 +87,7 @@ const Header = () => {
 
           <Link
             href="#"
-            className="bg-blue-100 text-blue-700 px-6 py-2 rounded-lg font-bold hover:bg-blue-200 transition-colors"
+            className="hidden sm:block bg-blue-100 text-blue-700 px-5 py-2 rounded-lg font-bold hover:bg-blue-200 transition-colors whitespace-nowrap"
           >
             Get started
           </Link>
@@ -101,8 +102,69 @@ const Header = () => {
             </svg>
             <span className="font-bold text-sm">15k</span>
           </Link>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className="lg:hidden p-2 text-gray-600"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {isMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16m-7 6h7"
+                />
+              )}
+            </svg>
+          </button>
         </div>
       </div>
+
+      {/* Mobile Menu Overlay */}
+      {isMenuOpen && (
+        <div className="lg:hidden bg-white border-t border-gray-100 px-4 py-6 space-y-4 shadow-lg absolute w-full left-0">
+          <div className="flex flex-col space-y-4 text-gray-700 font-medium">
+            <button className="text-left py-2 border-b border-gray-50">
+              Platform
+            </button>
+            <button className="text-left py-2 border-b border-gray-50">
+              Solutions
+            </button>
+            <button className="text-left py-2 border-b border-gray-50">
+              Developers
+            </button>
+            <button className="text-left py-2 border-b border-gray-50">
+              Documentation
+            </button>
+            <Link href="#" className="py-2 border-b border-gray-50">
+              Enterprise
+            </Link>
+            <Link href="#" className="py-2 border-b border-gray-50">
+              Blog
+            </Link>
+            <Link
+              href="#"
+              className="bg-blue-600 text-white text-center py-3 rounded-lg font-bold"
+            >
+              Get started
+            </Link>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
