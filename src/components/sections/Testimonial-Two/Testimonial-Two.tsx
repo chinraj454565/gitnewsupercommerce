@@ -28,7 +28,7 @@ const features = [
   },
   {
     title: "Headless eCommerce API",
-    desc: "Connect Spree to your ecosystem in an API-first mode to power custom shopping experiences with your WMS, ERP, or CRM.",
+    desc: "Connect spree to your ecosystem in an API-first mode to power custom shopping experiences with your WMS, ERP, or CRM.",
     img: "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-Composable-Headless-eCommerce.webp",
   },
 ];
@@ -36,11 +36,11 @@ const features = [
 const TestimonialTwo = () => {
   return (
     <>
-      <section className="w-full bg-white py-32">
+      <section className="w-full bg-[#F7F7F6]">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Title */}
           <h2 className="text-3xl md:text-4xl font-semibold text-center text-gray-900 mb-20">
-            This is what you can build with Spree
+            This is what you can build with super
           </h2>
 
           {/* Grid */}
@@ -69,12 +69,12 @@ const TestimonialTwo = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#F3F4F6] py-24 px-6 text-center">
+      <section className="bg-[#F7F7F6] py-15 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-2xl lg:text-4xl text-[#0B192E] mb-10 tracking-tight">
-            Spree success stories
+          super success stories
           </h2>
-          <button className="bg-[#0B192E] text-white px-10 py-4 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all">
+          <button className="bg-[#0B192E] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#132c4d] hover:rounded-[28px] transition-all duration-300 text-lg hover:bg-opacity-90 transition-all">
             See all Stories
           </button>
         </div>

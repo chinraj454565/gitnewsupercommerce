@@ -1,6 +1,6 @@
 import React from "react";
-import { default as ImageContent } from "./component/ImageContent";
-import { default as ImageContentSecond } from "./component/ImageContentSecond";
+import ImageContent from "./component/ImageContent";
+import ImageContentSecond from "./component/ImageContentSecond";
 
 const Testimonial = () => {
   const contentData = [
@@ -11,7 +11,7 @@ const Testimonial = () => {
       imageSrc:
         "https://spreecommerce.org/wp-content/uploads/2025/12/home-storefront-1024x632.png.webp",
       imageAlt: "Storefront preview",
-      isWide: false, // Normal width
+      isWide: false,
     },
     {
       title: "Multi-region & Multi-store",
@@ -20,18 +20,19 @@ const Testimonial = () => {
       imageSrc:
         "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-eCommerce-multi-region-1024x431-1.webp",
       imageAlt: "Multi-store dashboard",
-      isWide: true, // Takes up more space
+      isWide: true,
     },
   ];
+
   const contentData2 = [
     {
       title: "Cart & Checkout",
       description:
         "Customize checkout to reflect your business logic. Style it to be on-brand. Manage shipping and taxes calculations. Enable fast checkout with Apple Pay or Google Pay.",
       imageSrc:
-        "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-eCommerce-cart-checkout-1024x431-1.webp", // Update with actual URL if different
+        "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-eCommerce-cart-checkout-1024x431-1.webp",
       imageAlt: "Checkout interface preview",
-      isWide: true, // Based on image 1a41a6.jpg layout
+      isWide: true,
     },
     {
       title: "Payments & Refunds",
@@ -61,16 +62,17 @@ const Testimonial = () => {
       imageSrc:
         "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-eCommerce-emails-1024x431-1.webp",
       imageAlt: "Marketing automation preview",
-      isWide: true, // Based on image 1a4226.jpg layout
+      isWide: true,
     },
   ];
+
   const secondContentData = [
     {
       title: "Inventory management",
       description:
         "Manage stock levels across sales channels and locations. Track stock movements, receive stock, make transfers. Make products available or discontinued on a given date.",
       imageSrc:
-        "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-eCommerce-inventory-management-1024x431-1.webp", // Use your actual URL
+        "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-eCommerce-inventory-management-1024x431-1.webp",
       imageAlt: "Inventory management dashboard preview",
       reverse: false,
     },
@@ -92,33 +94,32 @@ const Testimonial = () => {
     {
       title: "API & Integrations",
       description:
-        "Connect Spree to any custom user interface eg. a Next.js storefront or a mobile app. Integrate Spree with any system using APIs or webhooks, eg. WMS, ERP, CRM.",
+        "Connect spree to any custom user interface eg. a Next.js storefront or a mobile app. Integrate spree with any system using APIs or webhooks, eg. WMS, ERP, CRM.",
       imageSrc:
         "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-eCommerce-Ecommerce-headless-API-1024x431-1.webp",
       imageAlt: "API and integrations code and cart preview",
-      reverse: false, // Set to true if you want text on the right
+      reverse: false,
     },
   ];
-  return (
-    <section className="w-full py-24 bg-[#f9fafb] font-sans">
-      <div className="max-w-7xl mx-auto px-6">
-        {/* Header Section */}
-        <div className="text-center mb-20">
-          <p className="text-[11px] font-black uppercase tracking-[0.2em] text-gray-500 mb-6">
-            Solution
-          </p>
-          <h2 className="text-[20px] lg:text-[28px] font-semibold text-[#0f172a] leading-tight mb-10 tracking-tight">
-            Spree is modular and customizable so you can build exactly{" "}
-            <br className="hidden lg:block" />
-            what you need
-          </h2>
-          <button className="bg-[#0a1a2f] text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-black transition-all">
-            See all Features
-          </button>
-        </div>
 
-        {/* Feature Cards Grid */}
+  return (
+    <section className="w-full py-16 sm:py-20 lg:py-24 bg-[#f5f5f5]">
+      {/* Header Section */}
+      <div className="max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8 text-center mb-12 sm:mb-16 lg:mb-20">
+        <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-[#6b7280] mb-5 sm:mb-6">
+          SOLUTION
+        </p>
+        <h2 className="text-[26px] sm:text-[32px] lg:text-[38px] font-light text-[#111827] leading-[1.2] mb-8 sm:mb-10 lg:mb-12 tracking-tight px-4">
+        super is modular and customizable so you can build exactly{" "}
+          <br className="hidden lg:block" />
+          what you need
+        </h2>
+        <button className="bg-[#0f172a] text-white px-7 sm:px-8 py-3.5 sm:py-4 rounded-[10px] font-semibold hover:bg-[#132c4d] hover:rounded-[28px] transition-all duration-300 text-[15px] sm:text-[16px] hover:bg-[#1e293b] transition-all shadow-sm">
+          See all Features
+        </button>
       </div>
+
+      {/* Feature Cards Grid */}
       <ImageContent items={contentData} />
       <ImageContentSecond items={secondContentData} />
       <ImageContent items={contentData2} />

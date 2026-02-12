@@ -2,39 +2,41 @@ import Image from "next/image";
 
 const ImageContentSecond = ({ items }: any) => {
   return (
-    <section className="flex flex-col gap-8 p-6">
-      {items.map((item: any, index: any) => (
-        <div
-          key={index}
-          className={`bg-[#F3F4F6] rounded-2xl overflow-hidden border border-gray-200 shadow-sm flex flex-col md:${item.reverse ? "flex-row-reverse" : "flex-row"} items-stretch min-h-[450px]`}
-        >
-          {/* Text Section - Vertically centered */}
-          <div className="w-full md:w-[40%] p-10 lg:p-16 flex flex-col justify-center">
-            <h3 className="text-3xl font-semibold text-[#1F2937] mb-6 tracking-tight">
-              {item.title}
-            </h3>
-            <p className="text-lg text-[#4B5563] leading-relaxed font-light">
-              {item.description}
-            </p>
-          </div>
+    <section className="w-full max-w-[1480px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="flex flex-col gap-5 lg:gap-6">
+        {items.map((item: any, index: number) => (
+          <div
+            key={index}
+            className={`bg-[#e8e9eb] rounded-[16px] overflow-hidden border border-[#d1d5db] shadow-sm flex flex-col-reverse ${item.reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}
+          >
+            {/* Text Section */}
+            <div className="w-full lg:w-[40%] p-6 sm:p-8 lg:p-12 xl:p-16 flex flex-col justify-center">
+              <h3 className="text-[22px] sm:text-[24px] lg:text-[26px] font-normal text-[#111827] mb-4 lg:mb-5 leading-tight tracking-tight">
+                {item.title}
+              </h3>
+              <p className="text-[15px] sm:text-[16px] lg:text-[17px] text-[#4b5563] leading-[1.65] font-normal">
+                {item.description}
+              </p>
+            </div>
 
-          {/* Image Section - The "Dashboard" container */}
-          <div className="w-full md:w-[60%] relative flex items-end justify-end overflow-hidden pt-10 pl-10 md:pt-12 md:pl-0">
-            {/* We use a wrapper with a defined height and translate 
-               to make it look like it's sliding off the bottom/right 
-            */}
-            <div className="relative w-[110%] h-[350px] md:h-[400px] rounded-tl-2xl border-t border-l border-gray-200 bg-white shadow-2xl overflow-hidden transform translate-x-4 translate-y-4">
-              <Image
-                src={item.imageSrc}
-                alt={item.imageAlt}
-                fill
-                className="object-contain object-left-top p-2" // Changed to contain + padding for better fit
-                priority
-              />
+            {/* Image Section - Dashboard container */}
+            <div className="w-full lg:w-[60%] relative flex items-end justify-end overflow-hidden p-6 sm:p-8 lg:p-0 lg:pt-10 lg:pr-10 lg:pb-0">
+              {/* Dashboard mockup with shadow and border */}
+              <div className="relative w-full lg:w-[calc(100%+40px)] h-[300px] sm:h-[400px] lg:h-[450px] rounded-tl-[12px] lg:rounded-tl-[16px] border-t border-l border-[#d1d5db] bg-white shadow-[0_4px_20px_rgba(0,0,0,0.12)] overflow-hidden lg:translate-x-10 lg:translate-y-10">
+                <div className="relative w-full h-full p-3 sm:p-4 lg:p-5">
+                  <Image
+                    src={item.imageSrc}
+                    alt={item.imageAlt}
+                    fill
+                    className="object-contain object-left-top"
+                    priority={index === 0}
+                  />
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </section>
   );
 };

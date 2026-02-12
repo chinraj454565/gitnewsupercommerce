@@ -4,6 +4,7 @@ import { Testimonial } from "@/components/sections/Testimonial-Section";
 import { HighlightSection } from "@/components/sections/Highlight-Section";
 import { TestimonialTwo } from "@/components/sections/Testimonial-Two";
 import { SuccessStoriesGrid } from "@/components/sections/Success-Stories";
+import NumberAchievement from "@/components/sections/Number-Acheivement/Number-Acheivement";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Testimonial />
       <TestimonialTwo />
       <SuccessStoriesGrid />
+      <NumberAchievement />
     </>
   );
 }

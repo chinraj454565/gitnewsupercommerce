@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const data = {
-    heading: "Let's use Spree to build exactly what your business needs",
+    heading: "Let's use spree to build exactly what your business needs",
     primaryBtnText: "Get started",
     secondaryBtnText: "See demo",
     bgImage:
@@ -19,20 +19,56 @@ const Footer = () => {
           </h2>
 
           {/* Button Group */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-20">
-            <Link
-              href="#"
-              className="px-8 py-4 bg-[#0B192E] text-white font-medium rounded-lg hover:bg-opacity-90 transition-all w-full sm:w-auto"
-            >
-              {data.primaryBtnText}
-            </Link>
-            <Link
-              href="#"
-              className="px-8 py-4 bg-white text-[#111827] font-medium rounded-lg border border-gray-200 shadow-sm hover:bg-gray-50 transition-all w-full sm:w-auto"
-            >
-              {data.secondaryBtnText}
-            </Link>
-          </div>
+          <div className="flex flex-row justify-center gap-4 mb-20 w-full px-4 max-w-md mx-auto">
+
+  {/* Primary */}
+  <Link
+    href="#"
+    className="
+      flex-1
+      text-center
+      bg-[#0B192E]
+      text-white
+      text-[16px]
+      font-semibold hover:bg-[#132c4d] hover:rounded-[28px] transition-all duration-300
+      leading-[24px]
+      px-[24px]
+      py-[14px]
+      rounded-[12px]
+      hover:opacity-90
+      transition
+    "
+  >
+    {data.primaryBtnText}
+  </Link>
+
+  {/* Secondary */}
+  <Link
+    href="#"
+    className="
+      flex-1
+      text-center
+      bg-white
+      text-[#0B192E]
+      text-[16px]
+      font-semibold hover:bg-[#132c4d] hover:rounded-[28px] transition-all duration-300
+      leading-[24px]
+      px-[24px]
+      py-[14px]
+      rounded-[12px]
+      border
+      border-[#E5E7EB]
+      shadow-sm
+      hover:bg-gray-50
+      transition
+    "
+  >
+    {data.secondaryBtnText}
+  </Link>
+
+</div>
+
+
         </div>
 
         {/* Decorative Bottom Shape */}
@@ -54,20 +90,20 @@ const Footer = () => {
           </h2>
 
           {/* Subscription Form */}
-          <form className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full sm:w-[350px] px-6 py-4 rounded-lg bg-white text-black text-lg focus:outline-none"
-              required
-            />
-            <button
-              type="submit"
-              className="w-full sm:w-auto px-10 py-4 bg-white text-black font-bold text-lg rounded-lg hover:bg-gray-200 transition-colors"
-            >
-              Subscribe
-            </button>
-          </form>
+          <form className="flex items-center justify-center gap-3 sm:gap-4 mb-8 px-4">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="flex-1 max-w-[280px] sm:max-w-[350px] px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-white text-black text-base sm:text-lg placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white/50"
+            required
+          />
+          <button
+            type="submit"
+            className="px-6 sm:px-10 py-3.5 sm:py-4 bg-white text-black font-bold text-base sm:text-lg rounded-xl sm:rounded-2xl hover:bg-gray-200 transition-colors whitespace-nowrap"
+          >
+            Subscribe
+          </button>
+        </form>
 
           {/* Legal Disclaimer */}
           <div className="text-[10px] uppercase tracking-widest text-gray-400 font-bold">
@@ -94,17 +130,17 @@ const Footer = () => {
           <div className="flex items-center gap-4 mb-6 md:mb-0">
             <img
               src="https://spreecommerce.org/wp-content/themes/spree/images/logo-sign-white.svg"
-              alt="Spree Logo"
+              alt="spree Logo"
               className="w-8 h-8"
             />
             <p className="text-xl font-light tracking-tight">
-              Spree is an open-source eCommerce framework giving you full
+            super is an open-source eCommerce framework giving you full
               control and customizability
             </p>
           </div>
           <Link
             href="/get-started"
-            className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors"
+            className="bg-white text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#132c4d] hover:rounded-[28px] transition-all duration-300 hover:bg-gray-200 transition-colors"
           >
             Get started
           </Link>
@@ -112,13 +148,13 @@ const Footer = () => {
 
         {/* Navigation Columns */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12 text-sm">
-          {/* Evaluate Spree */}
+          {/* Evaluate super */}
           <div>
-            <h4 className="text-gray-500 mb-6 font-medium">Evaluate Spree</h4>
+            <h4 className="text-gray-500 mb-6 font-medium">Evaluate super</h4>
             <ul className="space-y-4 font-semibold">
               <li>
                 <Link href="#" className="hover:text-gray-400">
-                  Upgrade an Old Spree Version
+                  Upgrade an Old super Version
                 </Link>
               </li>
               <li>
@@ -277,7 +313,7 @@ const Footer = () => {
         </div>
         {/* Social and Contact */}
         <div className="flex flex-col items-end gap-6 col-span-2 md:col-span-1">
-          <p className="font-semibold text-lg">hello@spreeecommerce.org</p>
+          <p className="font-semibold text-lg">hello@superecommerce.org</p>
           <div className="flex gap-4">
             <div className="w-10 h-10 bg-gray-900 rounded flex items-center justify-center cursor-pointer hover:bg-gray-800">
               𝕏
@@ -296,7 +332,7 @@ const Footer = () => {
           <p className="hover:text-white cursor-pointer font-bold">
             Privacy Policy
           </p>
-          <p>© 2026 Spree commerce. All rights reserved.</p>
+          <p>© 2026 super commerce. All rights reserved.</p>
         </div>
       </footer>
     </>
