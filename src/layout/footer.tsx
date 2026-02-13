@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Footer = () => {
   const data = {
-    heading: "Let's use spree to build exactly what your business needs",
+    heading: "Let's use super to build exactly what your business needs",
     primaryBtnText: "Get started",
     secondaryBtnText: "See demo",
     bgImage:
