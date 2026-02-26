@@ -29,29 +29,29 @@ export default function Header() {
       ],
       submenus: {
         Capabilities: [
-          { text: "Marketplace eCommerce", col: 1 },
-          { text: "Omnichannel eCommerce", col: 1 },
-          { text: "Multi-warehouse eCommerce", col: 1 },
-          { text: "Multi-store eCommerce", col: 1 },
-          { text: "Multi-tenant eCommerce", col: 1 },
-          { text: "Multi-region eCommerce", col: 2 },
-          { text: "Member-only eCommerce", col: 2 },
-          { text: "Digital product sales", col: 2 },
-          { text: "Headless eCommerce", col: 2 },
+          { text: "Marketplace eCommerce", col: 1, href: "#" },
+          { text: "Omnichannel eCommerce", col: 1, href: "#" },
+          { text: "Multi-warehouse eCommerce", col: 1, href: "#" },
+          { text: "Multi-store eCommerce", col: 1, href: "#" },
+          { text: "Multi-tenant eCommerce", col: 1, href: "#" },
+          { text: "Multi-region eCommerce", col: 2, href: "#" },
+          { text: "Member-only eCommerce", col: 2, href: "#" },
+          { text: "Digital product sales", col: 2, href: "#" },
+          { text: "Headless eCommerce", col: 2, href: "#" },
         ],
         "Use Cases": [
-          { text: "B2B eCommerce", col: 1 },
-          { text: "B2B & DTC eCommerce", col: 1 },
-          { text: "DTC eCommerce", col: 1 },
-          { text: "Wholesale eCommerce", col: 1 },
-          { text: "Business Equipment or Supplies", col: 1 },
-          { text: "CBD eCommerce", col: 1 },
+          { text: "B2B eCommerce", col: 1, href: "#" },
+          { text: "B2B & DTC eCommerce", col: 1, href: "#" },
+          { text: "DTC eCommerce", col: 1, href: "#" },
+          { text: "Wholesale eCommerce", col: 1, href: "#" },
+          { text: "Business Equipment or Supplies", col: 1, href: "#" },
+          { text: "CBD eCommerce", col: 1, href: "#" },
         ],
         "Project Goals": [
-          { text: "Migrating from a SaaS", col: 1 },
-          { text: "Migrating from legacy eCommerce", col: 1 },
-          { text: "A new eCommerce project", col: 1 },
-          { text: "Older Spree version upgrade", col: 1 },
+          { text: "Migrating from a SaaS", col: 1, href: "#" },
+          { text: "Migrating from legacy eCommerce", col: 1, href: "#" },
+          { text: "A new eCommerce project", col: 1, href: "#" },
+          { text: "Older Spree version upgrade", col: 1, href: "#" },
         ],
       },
     },
@@ -63,21 +63,25 @@ export default function Header() {
               icon: "/images/features.svg",
               title: "Features",
               subtitle: "Customer- & Admin-facing",
+              href: "/platform/features",
             },
             {
               icon: "/images/integrations.svg",
               title: "Integrations",
               subtitle: "Everything your eCommerce needs",
+              href: "/platform/integrations",
             },
             {
               icon: "/images/demo.svg",
               title: "Demo",
               subtitle: "Check out a live Super site",
+              href: "/platform/demo",
             },
             {
               icon: "/images/success_stories.svg",
               title: "Success Stories",
               subtitle: "5000+ businesses using Super",
+              href: "/platform/success-stories",
             },
           ],
         },
@@ -91,21 +95,25 @@ export default function Header() {
               icon: "/images/developers.svg",
               title: "Super for Developers",
               subtitle: "Quick links to all the resources",
+              href: "/developers",
             },
             {
               icon: "/images/github.svg",
               title: "Github",
               subtitle: "Get the source code",
+              href: "https://github.com/spree",
             },
             {
               icon: "/images/slack.svg",
               title: "Slack",
               subtitle: "Join the Super community",
+              href: "#",
             },
             {
               icon: "/images/releases.svg",
               title: "Changelog",
               subtitle: "Check out the latest",
+              href: "/developers/changelog",
             },
           ],
         },
@@ -119,33 +127,37 @@ export default function Header() {
               icon: "/images/Dev_Guide.svg",
               title: "Developer docs",
               subtitle: "Everything you need to know",
+              href: "/documentation/developer-docs",
             },
             {
               icon: "/images/API.svg",
               title: "Ecommerce API",
               subtitle: "For headless applications or mobile apps",
+              href: "/documentation/api",
             },
             {
               icon: "/images/Dev_Guide.svg",
               title: "User docs",
               subtitle: "What is Super Commerce? What editions are there?",
+              href: "/documentation/user-docs",
             },
             {
               icon: "/images/integrations.svg",
               title: "Integrations",
               subtitle: "Everything your eCommerce needs",
+              href: "/platform/integrations",
             },
             {
               icon: "/images/use-cases.svg",
               title: "Use Cases",
               subtitle: "Marketplace, Multi-tenant, B2B eCommerce",
+              href: "#",
             },
           ],
         },
       ],
     },
   };
-
 
   const handleNavClick = (itemName: string) => {
     if (megaMenuContent[itemName]) {
@@ -350,8 +362,9 @@ export default function Header() {
                                             .map((subItem: any, idx: number) => (
                                               <Link
                                                 key={idx}
-                                                href="#"
+                                                href={subItem.href}
                                                 className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                                                onClick={() => setActiveMegaMenu(null)}
                                               >
                                                 {subItem.text}
                                               </Link>
@@ -367,8 +380,9 @@ export default function Header() {
                                             .map((subItem: any, idx: number) => (
                                               <Link
                                                 key={idx}
-                                                href="#"
+                                                href={subItem.href}
                                                 className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
+                                                onClick={() => setActiveMegaMenu(null)}
                                               >
                                                 {subItem.text}
                                               </Link>
@@ -390,10 +404,11 @@ export default function Header() {
                                           {section.items.map((menuItem: any, itemIdx: number) => (
                                             <Link
                                               key={itemIdx}
-                                              href="#"
+                                              href={menuItem.href}
                                               onMouseEnter={() => setHoveredItem(menuItem.title)}
                                               onMouseLeave={() => setHoveredItem(null)}
                                               className="group flex items-start gap-3 px-3 py-3 hover:bg-gray-50 rounded-lg transition-colors"
+                                              onClick={() => setActiveMegaMenu(null)}
                                             >
                                               <div className="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg flex-shrink-0">
                                                 <img
@@ -539,11 +554,9 @@ export default function Header() {
             </Link>
           </div>
         </div>
-
-        {/* No mega menu here anymore - moved to individual nav items */}
       </div>
 
-      {/* Mobile/Tablet Menu Overlay */}
+      {/* Mobile Menu - same as before but with navigation */}
       {mobileMenuOpen && (
         <div 
           className="lg:hidden fixed inset-0 bg-[#E8E8E8] z-40 overflow-y-auto" 
@@ -619,8 +632,12 @@ export default function Header() {
                                     (subItem: any, idx: number) => (
                                       <Link
                                         key={idx}
-                                        href="#"
+                                        href={subItem.href}
                                         className="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg"
+                                        onClick={() => {
+                                          setMobileMenuOpen(false);
+                                          setActiveMegaMenu(null);
+                                        }}
                                       >
                                         {subItem.text}
                                       </Link>
@@ -642,15 +659,19 @@ export default function Header() {
                             (menuItem: any, idx: number) => (
                               <Link
                                 key={idx}
-                                href="#"
+                                href={menuItem.href}
                                 className="flex items-start gap-3 p-3 hover:bg-gray-50 rounded-lg"
+                                onClick={() => {
+                                  setMobileMenuOpen(false);
+                                  setActiveMegaMenu(null);
+                                }}
                               >
                                 <div className="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg flex-shrink-0">
-                                      <img
-                                          src={menuItem.icon}
-                                          alt={menuItem.title}
-                                          className="w-5 h-5 object-contain"
-                                           />
+                                  <img
+                                    src={menuItem.icon}
+                                    alt={menuItem.title}
+                                    className="w-5 h-5 object-contain"
+                                  />
                                 </div>
                                 <div className="flex-1">
                                   <h4 className="font-semibold text-gray-900 text-sm">
