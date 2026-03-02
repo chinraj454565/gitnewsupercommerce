@@ -43,8 +43,16 @@ export default function Header() {
           { text: "Multi-warehouse eCommerce", col: 1, href: "#" },
           { text: "Multi-store eCommerce", col: 1, href: "#" },
           { text: "Multi-tenant eCommerce", col: 1, href: "#" },
-          { text: "Multi-region eCommerce", col: 2, href: "#" },
-          { text: "Member-only eCommerce", col: 2, href: "#" },
+          {
+            text: "Multi-region eCommerce",
+            col: 2,
+            href: "/capabilities/multi-region-ecommerce",
+          },
+          {
+            text: "Member-only eCommerce",
+            col: 2,
+            href: "/capabilities/member-only-ecommerce",
+          },
           { text: "Digital product sales", col: 2, href: "#" },
           { text: "Headless eCommerce", col: 2, href: "#" },
         ],

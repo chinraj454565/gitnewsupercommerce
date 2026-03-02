@@ -34,8 +34,7 @@ const CommonToAll = ({ features = [], stories = [] }: CommonToAllProps) => {
   const duplicatedLogos = [...logos, ...logos];
   return (
     <>
-      {" "}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mt-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-12  bg-[#F3F3F3] mt-0">
         {features.map((feature: any, index: any) => (
           <div key={index} className="flex flex-col items-center">
             {/* Blue Check Icon */}
