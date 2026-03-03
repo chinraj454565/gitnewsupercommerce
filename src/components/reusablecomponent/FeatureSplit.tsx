@@ -18,41 +18,42 @@ const FeatureSplit = ({
   buttonText = "Get started",
 }: FeatureSplitProps) => {
   return (
-    <section className="w-full bg-[#F3F3F3] py-16 md:py-24">
+    <section className="w-full bg-[#F3F3F3] py-20 md:py-5">
       {" "}
-      <div className="max-w-6xl mx-auto px-5">
-        ```
-        {/* Grid */}
+      <div className="max-w-7xl mx-auto px-6">
+        {/* GRID */}
         <div
-          className={`grid md:grid-cols-2 gap-12 items-center ${
+          className={`grid md:grid-cols-12 gap-12 items-center ${
             reverse ? "md:[&>*:first-child]:order-2" : ""
           }`}
         >
-          {/* TEXT CONTENT */}
-          <div className="space-y-6 text-center md:text-left">
-            <h2 className="text-2xl md:text-4xl font-semibold text-slate-900">
+          {/* TEXT COLUMN */}
+          <div className="md:col-span-5 space-y-6 text-center md:text-left">
+            <h2 className="text-2xl md:text-3xl font-semibold text-slate-900 leading-tight">
               {title}
             </h2>
 
-            <p className="text-slate-600 leading-relaxed text-base md:text-lg max-w-xl mx-auto md:mx-0">
+            <p className="text-slate-600 leading-relaxed text-base md:text-base  max-w-lg mx-auto md:mx-0">
               {description}
             </p>
 
-            <button className="inline-block bg-[#0A1A2F] text-white px-6 py-3 rounded-md font-medium hover:bg-slate-800 transition-colors">
+            <button className="inline-block bg-[#0A1A2F] text-white px-7 py-3.5 rounded-md font-medium hover:bg-slate-800 transition-colors">
               {buttonText}
             </button>
           </div>
 
-          {/* IMAGE CARD */}
-          <div className="w-full">
-            <div className="relative w-full aspect-[16/10] bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
-              {/* dummy image */}
+          {/* IMAGE COLUMN */}
+          <div className="md:col-span-7">
+            {/* Card wrapper (same as real website look) */}
+            <div className="w-full rounded-2xl overflow-hidden ">
+              {/* IMPORTANT: NO fixed height, NO fill */}
               <Image
                 src={image}
                 alt={title}
-                fill
-                sizes="(max-width:768px) 100vw, 50vw"
-                className="object-cover"
+                width={1600}
+                height={1000}
+                sizes="(max-width:768px) 100vw, 60vw"
+                className="w-full h-auto object-contain"
                 priority={false}
               />
             </div>

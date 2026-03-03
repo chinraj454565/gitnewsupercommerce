@@ -40,8 +40,16 @@ export default function Header() {
             col: 1,
             href: "/capabilities/omnichannel-ecommerce",
           },
-          { text: "Multi-warehouse eCommerce", col: 1, href: "#" },
-          { text: "Multi-store eCommerce", col: 1, href: "#" },
+          {
+            text: "Multi-warehouse eCommerce",
+            col: 1,
+            href: "/capabilities/multi-warehouse-ecommerce",
+          },
+          {
+            text: "Multi-store eCommerce",
+            col: 1,
+            href: "/capabilities/multi-store-ecommerce",
+          },
           { text: "Multi-tenant eCommerce", col: 1, href: "#" },
           {
             text: "Multi-region eCommerce",
@@ -53,8 +61,16 @@ export default function Header() {
             col: 2,
             href: "/capabilities/member-only-ecommerce",
           },
-          { text: "Digital product sales", col: 2, href: "#" },
-          { text: "Headless eCommerce", col: 2, href: "#" },
+          {
+            text: "Digital product sales",
+            col: 2,
+            href: "/capabilities/digital-product-sales",
+          },
+          {
+            text: "Headless eCommerce",
+            col: 2,
+            href: "/capabilities/headless-ecommerce",
+          },
         ],
         "Use Cases": [
           { text: "B2B eCommerce", col: 1, href: "#" },
