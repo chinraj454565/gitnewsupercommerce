@@ -23,7 +23,7 @@ const OmnichannelSection = () => {
       description:
         "Ratio Clothing uses Spree Commerce for its online platform with customized shirts and a machine learning fitting algorithm.",
       tag: "DTC",
-      img: "https://spreecommerce.org/wp-content/uploads/2024/07/Ratio-Clothing-uses-Spree-Commerce-for-its-online-platform-with-customized-shirts-and-a-machine-learning-fitting-algorithm-1024x512.png.webp",
+      img: "/omnichannel-ecommerce/image5.webp",
     },
     {
       title:
@@ -31,7 +31,7 @@ const OmnichannelSection = () => {
       description:
         "Fortnum & Mason chose Spree for its fully responsive eCommerce site to ensure that online customers enjoy the same high quality experience that the brand has been providing in store for over 300 years.",
       tag: "DTC",
-      img: "https://spreecommerce.org/wp-content/uploads/2024/07/300-year-old-luxury-retailer-Fortnum-Mason-gets-20-more-customers-with-Spree-Commerce-site-1024x682.png.webp",
+      img: "/omnichannel-ecommerce/image6.webp",
     },
     {
       title:
@@ -39,7 +39,7 @@ const OmnichannelSection = () => {
       description:
         "Mitchells sets the example here with their Spree based eCommerce platform that provides their customers with exquisite user experience. This way they feel welcome, valued and appreciated at every click just like they do when visiting Mitchells brick and mortar stores.",
       tag: "DTC",
-      img: "https://spreecommerce.org/wp-content/uploads/2024/07/Mitchells-chose-Spree-for-their-luxury-fashion-eCommerce-store-with-human-touch-1024x683-1.webp",
+      img: "/omnichannel-ecommerce/image7.webp",
     },
     {
       title:
@@ -47,7 +47,7 @@ const OmnichannelSection = () => {
       description:
         "Huckberry, which is described as equal parts store, magazine and inspiration, was founded by friends Andy Forch and Richard Greiner in 2011. They wanted to create a shopping and lifestyle experience for young men who live in the city but have a passion for the outdoors.",
       tag: "DTC",
-      img: "https://spreecommerce.org/wp-content/uploads/2024/07/Huckberry-redefines-eCommerce-for-the-outdoor-adventurers-with-Spree-storytelling-and-data-driven-marketing-1024x438-1.webp",
+      img: "/omnichannel-ecommerce/image8.webp",
     },
   ];
   const features = [
@@ -119,7 +119,7 @@ const OmnichannelSection = () => {
               <div className="md:w-1/2 bg-black flex items-center justify-center p-6">
                 {/* Dummy Image for POS hardware */}
                 <img
-                  src="https://spreecommerce.org/wp-content/uploads/2024/07/omnichannel-ecommerce-header.webp"
+                  src="/omnichannel-ecommerce/image1.webp"
                   alt="Omnichannel hardware"
                   className="w-full h-full object-contain max-h-[300px]"
                 />
@@ -208,7 +208,7 @@ const OmnichannelSection = () => {
             </div>
             <div className="order-1 lg:order-2 bg-white p-2 rounded-2xl shadow-sm border border-gray-100">
               <img
-                src="https://spreecommerce.org/wp-content/uploads/2024/07/omnichannel-ecommerce-payment-1024x575.webp"
+                src="/omnichannel-ecommerce/image2.webp"
                 alt="One payment processor UI"
                 className="w-full h-auto rounded-xl object-contain"
               />
@@ -219,7 +219,7 @@ const OmnichannelSection = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="bg-white p-2 rounded-2xl shadow-sm border border-gray-100">
               <img
-                src="https://spreecommerce.org/wp-content/uploads/2024/07/omnichannel-ecommerce-cross-1024x575.webp"
+                src="/omnichannel-ecommerce/image3.webp"
                 alt="Cross-channel shopping UI"
                 className="w-full h-auto rounded-xl object-contain"
               />
@@ -256,7 +256,7 @@ const OmnichannelSection = () => {
             </div>
             <div className="order-1 lg:order-2 bg-white p-2 rounded-2xl shadow-sm border border-gray-100">
               <img
-                src="https://spreecommerce.org/wp-content/uploads/2024/07/omnichannel-ecommerce-centralized-1024x575.webp"
+                src="/omnichannel-ecommerce/image4.webp"
                 alt="Centralized management dashboard"
                 className="w-full h-auto rounded-xl object-contain"
               />

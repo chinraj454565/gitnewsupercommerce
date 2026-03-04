@@ -28,8 +28,7 @@ const MultiRegionSection = () => {
       description:
         "Detect the customer's location but allow them to change it any time.",
       buttonText: "Get started",
-      imageSrc:
-        "https://spreecommerce.org/wp-content/uploads/2024/07/multi-region-country-picker-1024x575.webp", // Replace with your asset
+      imageSrc: "/multi-region-ecommerce/image1.webp", // Replace with your asset
       reverse: false,
     },
     {
@@ -37,8 +36,7 @@ const MultiRegionSection = () => {
       description:
         "Allow customers to shop in their own currency, language, pay as they like, get a fast delivery.",
       buttonText: "Get started",
-      imageSrc:
-        "https://spreecommerce.org/wp-content/uploads/2024/07/multi-region-country-shopping-1024x575.webp", // Replace with your asset
+      imageSrc: "/multi-region-ecommerce/image2.webp", // Replace with your asset
       reverse: true, // This flips the layout on desktop
     },
     {
@@ -46,8 +44,7 @@ const MultiRegionSection = () => {
       description:
         "Use 3rd parties specialized in cross-border sales to address all the pain-points.",
       buttonText: "Get started",
-      imageSrc:
-        "https://spreecommerce.org/wp-content/uploads/2024/07/multi-region-outsource-1024x575.webp", // Replace with your asset
+      imageSrc: "/multi-region-ecommerce/image3.webp", // Replace with your asset
       reverse: false,
     },
   ];
@@ -76,7 +73,7 @@ const MultiRegionSection = () => {
       description:
         "ACR Electronics, Inc. designs and manufactures safety products. The company offers rescue beacons and survival gear for boaters, pilots, hunters, hikers, and combat troops. ACR Electronics serves boat builders and aircraft manufacturers industries worldwide. The company uses Super Commerce for its e-commerce platform that supports international sales.",
       tag: "B2B",
-      img: "https://spreecommerce.org/wp-content/uploads/2024/07/obraz_2024-07-31_115358695-1024x581.png",
+      img: "/multi-region-ecommerce/newimage4.webp",
     },
     {
       title:
@@ -84,7 +81,7 @@ const MultiRegionSection = () => {
       description:
         "Vidyodan uses Super Commerce headless backend connected through API to its mobile app available for both iOS and Android users. Payment systems are integrated into the live stream so that the users are able to complete the shopping experience without disconnecting.",
       tag: "Composable",
-      img: "https://spreecommerce.org/wp-content/uploads/2024/07/video-livestream-shopping-mobile-app-with-a-headless-marketplace-Spree-backend-1024x596.png.webp",
+      img: "/multi-region-ecommerce/image5.webp",
     },
     {
       title:
@@ -92,14 +89,14 @@ const MultiRegionSection = () => {
       description:
         "Alabama Chanin is a lifestyle brand of well-designed and thoughtfully made goods for the person and the home. It celebrates and preserves unique traditions and crafting techniques, with a strong commitment to community through Made in the USA, local production. The company is rooted in the tenets of the Slow Design movement: good, clean, fair — which encourages designers, artists, and consumers to create and utilize thoughtful products in a socially and environmentally responsible way.",
       tag: "DTC",
-      img: "https://spreecommerce.org/wp-content/uploads/2024/07/Alabama-Chanin-an-artisan-and-sustainable-fashion-brand-uses-open-source-e-commerce-solution-1024x684.png.webp",
+      img: "/multi-region-ecommerce/image6.webp",
     },
     {
       title: "Away uses Super Commerce for its $1.4B smart luggage brand",
       description:
         "Away is an e-commerce luggage startup founded by two former Warby Parker executives that aims to be the ultimate carry-on for travelers. The premium travel brand introduced its streamlined, tech-infused carry-on luggage, selling directly to consumers to keep prices down. The vast majority of its sales takes place on Away’s sleek and user-friendly website built with Super Commerce, a flexible and scalable market-proven e-commerce solution.",
       tag: "DTC",
-      img: "https://spreecommerce.org/wp-content/uploads/2024/07/Away-uses-Spree-Commerce-for-a-smart-luggage-brand.webp",
+      img: "/multi-region-ecommerce/image7.webp",
     },
   ];
   // Helper to handle the text replacement requirement

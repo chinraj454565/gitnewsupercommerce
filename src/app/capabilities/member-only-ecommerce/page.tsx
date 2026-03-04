@@ -28,8 +28,7 @@ const MemberOnlySection = () => {
       title: "Survey customers on sign up",
       description:
         "New customers complete a registration form, select their customer segment, and answer qualifying questions so the platform can tailor their experience from the beginning.",
-      image:
-        "https://spreecommerce.org/wp-content/uploads/2024/07/member-only-survey-1024x575.webp",
+      image: "/MemberOnlySection/image1.webp",
       reverse: false,
       buttonText: "Get started",
     },
@@ -38,8 +37,7 @@ const MemberOnlySection = () => {
       title: "Sell only to signed in users",
       description:
         "Products and pricing are hidden from visitors. Customers must sign in to view product details and make purchases, enabling private catalogs and controlled access.",
-      image:
-        "https://spreecommerce.org/wp-content/uploads/2024/07/member-only-users-1024x575.webp",
+      image: "/MemberOnlySection/image2.webp",
       reverse: true,
       buttonText: "Get started",
     },
@@ -48,8 +46,7 @@ const MemberOnlySection = () => {
       title: "Offer products that fit",
       description:
         "Each customer segment sees only the product catalog, categories, and pricing relevant to them, creating a personalized shopping experience for every buyer type.",
-      image:
-        "https://spreecommerce.org/wp-content/uploads/2024/07/member-only-offer-1024x575.webp",
+      image: "/MemberOnlySection/image3.webp",
       reverse: false,
       buttonText: "Get started",
     },
