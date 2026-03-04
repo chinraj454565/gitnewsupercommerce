@@ -118,14 +118,14 @@ export default function MarketplaceEcommercePage() {
       description:
         "Scout & Nimble is a social commerce platform that works with interior designers to curate shoppable rooms utilizing the available software & products. Since it's an online marketplace, everything is customizable for the consumer.",
       tag: "DTC",
-      img: "https://spreecommerce.org/wp-content/uploads/2025/12/Scout-Nimble-uses-Spree-for-its-online-marketplace-for-shoppable-designer-rooms-and-home-decor-1024x768-1.webp",
+      img: "/marketplace-ecommerce/image11.webp",
     },
     {
       title: "Garmentory luxury fashion marketplace grows 400% on Super",
       description:
         "Garmentory is the leading fashion marketplace dedicated to independent boutiques and emerging fashion designers that provides consumers with a new and curated shopping experience.",
       tag: "DTC",
-      img: "https://spreecommerce.org/wp-content/uploads/2025/12/Garmentory-luxury-fashion-marketplace-grows-on-Spree-Commerce-1024x640-1.webp",
+      img: "/marketplace-ecommerce/image12.webp",
     },
     {
       title:
@@ -133,7 +133,7 @@ export default function MarketplaceEcommercePage() {
       description:
         "Maisonette aims to be an authority in the children's market as a shopping destination and an editorial destination with interviews and photo shoots. It is also a stylish solution to one-stop-shopping that stocks hundreds of brands. Maisonette uses Super Commerce for its children's wear multi-vendor marketplace.",
       tag: "DTC",
-      img: "https://spreecommerce.org/wp-content/uploads/2025/12/Maisonette-children-marketplace-Spree-Commerce-1024x526-1.webp",
+      img: "/marketplace-ecommerce/image13.webp",
     },
     {
       title:
@@ -141,7 +141,7 @@ export default function MarketplaceEcommercePage() {
       description:
         "Marley Spoon is a cook-at-home food delivery startup founded by ex-Delivery Hero chief executive Fabian Siegel and Till Neatby. The company is based in Berlin and has operations in Europe, the US and Australia.",
       tag: "DTC",
-      img: "https://spreecommerce.org/wp-content/uploads/2025/12/Marley-Spoon-uses-Spree-Commerce-for-its-cook-at-home-meal-kit-subscription-service-1024x683-1.webp",
+      img: "/marketplace-ecommerce/image14.webp",
     },
   ];
 
@@ -183,11 +183,11 @@ export default function MarketplaceEcommercePage() {
                 a single order with a single payment.
               </p>
 
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
-                <button className="w-full sm:w-auto bg-[#0A1A2F] text-white px-12 py-4 rounded-md text-[16px] font-semibold hover:bg-[#162A45] transition-colors">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 w-full">
+                <button className="w-full sm:w-auto bg-[#0A1A2F] text-white px-6 sm:px-12 py-4 rounded-md text-[16px] font-semibold hover:bg-[#162A45] transition-colors whitespace-nowrap">
                   Get started
                 </button>
-                <button className="w-full sm:w-auto bg-white border border-[#E2E8F0] text-[#0A1A2F] px-12 py-4 rounded-md text-[16px] font-semibold hover:bg-gray-50 transition-colors shadow-sm">
+                <button className="w-full sm:w-auto bg-white border border-[#E2E8F0] text-[#0A1A2F] px-6 sm:px-12 py-4 rounded-md text-[16px] font-semibold hover:bg-gray-50 transition-colors shadow-sm whitespace-nowrap">
                   Book demo
                 </button>
               </div>
@@ -215,7 +215,7 @@ export default function MarketplaceEcommercePage() {
 
               <div className="relative w-full max-w-[900px] mx-auto">
                 <img
-                  src="https://spreecommerce.org/wp-content/uploads/2025/10/marketplace-ecommerce-intro.webp"
+                  src="/marketplace-ecommerce/image1.webp"
                   alt="Marketplace Platform Illustration"
                   className="w-full h-auto object-contain"
                 />
@@ -247,7 +247,7 @@ export default function MarketplaceEcommercePage() {
                 <div className="flex flex-col">
                   <div className="bg-white p-5 rounded-xl border border-[#E2E8F0] shadow-sm mb-6 hover:shadow-md transition-shadow">
                     <img
-                      src="https://spreecommerce.org/wp-content/uploads/2025/10/marketplace-ecommerce-onboarding.webp"
+                      src="/marketplace-ecommerce/image2.webp"
                       alt="Shopify Vendor Onboarding"
                       className="w-full h-auto rounded-lg"
                     />
@@ -266,7 +266,7 @@ export default function MarketplaceEcommercePage() {
                 <div className="flex flex-col">
                   <div className="bg-white p-5 rounded-xl border border-[#E2E8F0] shadow-sm mb-6 hover:shadow-md transition-shadow">
                     <img
-                      src="https://spreecommerce.org/wp-content/uploads/2025/10/marketplace-ecommerce-merchandising.webp"
+                      src="/marketplace-ecommerce/image3.webp"
                       alt="Marketplace Merchandising"
                       className="w-full h-auto rounded-lg"
                     />
@@ -318,7 +318,7 @@ export default function MarketplaceEcommercePage() {
                 <div className="space-y-6">
                   <div className="bg-white p-4 rounded-xl border border-[#E2E8F0] shadow-sm">
                     <img
-                      src="https://spreecommerce.org/wp-content/uploads/2025/10/marketplace-ecommerce-payments.webp"
+                      src="/marketplace-ecommerce/image4.webp"
                       alt="Checkout"
                       className="w-full rounded-lg"
                     />
@@ -334,7 +334,7 @@ export default function MarketplaceEcommercePage() {
                 <div className="space-y-6">
                   <div className="bg-white p-4 rounded-xl border border-[#E2E8F0] shadow-sm">
                     <img
-                      src="https://spreecommerce.org/wp-content/uploads/2025/10/marketplace-ecommerce-payouts.webp"
+                      src="/marketplace-ecommerce/image5.webp"
                       alt="Payouts"
                       className="w-full rounded-lg"
                     />
@@ -350,7 +350,7 @@ export default function MarketplaceEcommercePage() {
                 <div className="space-y-6">
                   <div className="bg-white p-4 rounded-xl border border-[#E2E8F0] shadow-sm">
                     <img
-                      src="https://spreecommerce.org/wp-content/uploads/2025/10/marketplace-ecommerce-promotions.webp"
+                      src="/marketplace-ecommerce/image6.webp"
                       alt="Payouts"
                       className="w-full rounded-lg"
                     />
@@ -413,7 +413,7 @@ export default function MarketplaceEcommercePage() {
               <div className="p-8 border-b md:border-b-0 md:border-r border-gray-200">
                 <div className="bg-gray-50 rounded-lg p-4 mb-6 aspect-video flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm">
                   <img
-                    src="https://spreecommerce.org/wp-content/uploads/2025/10/Marketplace-Vendor-Dashboard.webp"
+                    src="/marketplace-ecommerce/image7.webp"
                     alt="Vendor Dashboard"
                     className="rounded shadow-lg object-cover"
                   />
@@ -434,7 +434,7 @@ export default function MarketplaceEcommercePage() {
               <div className="p-8">
                 <div className="bg-gray-50 rounded-lg p-4 mb-6 aspect-video flex items-center justify-center overflow-hidden border border-gray-100 shadow-sm">
                   <img
-                    src="https://spreecommerce.org/wp-content/uploads/2025/10/Marketplace-Shopify-Onboarding.webp"
+                    src="/marketplace-ecommerce/image8.webp"
                     alt="Shopify Onboarding"
                     className="rounded object-contain"
                   />
@@ -540,7 +540,7 @@ export default function MarketplaceEcommercePage() {
                    The 'objectFit="contain"' ensures the full graphic is visible.
                 */}
                   <img
-                    src="https://spreecommerce.org/wp-content/uploads/2025/10/marketplace-shopping-experience.webp"
+                    src="/marketplace-ecommerce/image9.webp"
                     alt="Multi-vendor cart and checkout UI flow"
                     className="w-full h-full object-contain p-2"
                   />
@@ -558,7 +558,7 @@ export default function MarketplaceEcommercePage() {
               <div className="p-8 flex flex-col">
                 <div className="bg-gray-50 rounded-md mb-6 relative aspect-[16/10] overflow-hidden border border-gray-100 shadow-inner">
                   <img
-                    src="https://spreecommerce.org/wp-content/uploads/2025/10/marketplace-country-specific.webp"
+                    src="/marketplace-ecommerce/image10.webp"
                     alt="Global map with currency and flag selectors"
                     className="w-full h-full object-contain p-2"
                   />

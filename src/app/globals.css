@@ -39,14 +39,14 @@
 
 /* ✅ Only apply overflow-x hidden to html and body, NOT any wrapper div */
 html {
-  overflow-x: clip;   /* ← use clip instead of hidden for sticky to work */
+  overflow-x: clip; /* ← use clip instead of hidden for sticky to work */
 }
 
 body {
-  overflow-x: clip;   /* ← use clip instead of hidden for sticky to work */
+  overflow-x: clip; /* ← use clip instead of hidden for sticky to work */
   max-width: 100%;
   width: 100%;
-  background: #F7F7F6;
+  background: #f7f7f6;
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -63,4 +63,15 @@ header {
   position: sticky;
   top: 0;
   z-index: 50;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

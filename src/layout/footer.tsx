@@ -11,7 +11,7 @@ const Footer = () => {
   };
   return (
     <>
-      <section className="relative w-full pt-24 pb-0 px-6 overflow-hidden bg-[#F9FAFB]">
+      <section className="relative w-full pt-24 pb-0 px-6 overflow-hidden bg-[#F3F3F3]">
         <div className="max-w-4xl mx-auto text-center relative z-10">
           {/* Main Heading */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#111827] leading-tight mb-10">
@@ -20,11 +20,10 @@ const Footer = () => {
 
           {/* Button Group */}
           <div className="flex flex-row justify-center gap-4 mb-20 w-full px-4 max-w-md mx-auto">
-
-  {/* Primary */}
-  <Link
-    href="#"
-    className="
+            {/* Primary */}
+            <Link
+              href="#"
+              className="
       flex-1
       text-center
       bg-[#0B192E]
@@ -38,14 +37,14 @@ const Footer = () => {
       hover:opacity-90
       transition
     "
-  >
-    {data.primaryBtnText}
-  </Link>
+            >
+              {data.primaryBtnText}
+            </Link>
 
-  {/* Secondary */}
-  <Link
-    href="#"
-    className="
+            {/* Secondary */}
+            <Link
+              href="#"
+              className="
       flex-1
       text-center
       bg-white
@@ -62,13 +61,10 @@ const Footer = () => {
       hover:bg-gray-50
       transition
     "
-  >
-    {data.secondaryBtnText}
-  </Link>
-
-</div>
-
-
+            >
+              {data.secondaryBtnText}
+            </Link>
+          </div>
         </div>
 
         {/* Decorative Bottom Shape */}
@@ -91,19 +87,19 @@ const Footer = () => {
 
           {/* Subscription Form */}
           <form className="flex items-center justify-center gap-3 sm:gap-4 mb-8 px-4">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="flex-1 max-w-[280px] sm:max-w-[350px] px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-white text-black text-base sm:text-lg placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white/50"
-            required
-          />
-          <button
-            type="submit"
-            className="px-6 sm:px-10 py-3.5 sm:py-4 bg-white text-black font-bold text-base sm:text-lg rounded-xl sm:rounded-2xl hover:bg-gray-200 transition-colors whitespace-nowrap"
-          >
-            Subscribe
-          </button>
-        </form>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="flex-1 max-w-[280px] sm:max-w-[350px] px-5 sm:px-6 py-3.5 sm:py-4 rounded-xl sm:rounded-2xl bg-white text-black text-base sm:text-lg placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-white/50"
+              required
+            />
+            <button
+              type="submit"
+              className="px-6 sm:px-10 py-3.5 sm:py-4 bg-white text-black font-bold text-base sm:text-lg rounded-xl sm:rounded-2xl hover:bg-gray-200 transition-colors whitespace-nowrap"
+            >
+              Subscribe
+            </button>
+          </form>
 
           {/* Legal Disclaimer */}
           <div className="text-[10px] uppercase tracking-widest text-gray-400 font-bold">
@@ -134,7 +130,7 @@ const Footer = () => {
               className="w-8 h-8"
             />
             <p className="text-xl font-light tracking-tight">
-            super is an open-source eCommerce framework giving you full
+              super is an open-source eCommerce framework giving you full
               control and customizability
             </p>
           </div>

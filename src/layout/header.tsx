@@ -17,8 +17,8 @@ export default function Header() {
     { name: "Solutions", href: "#", hasPlus: true },
     { name: "Developers", href: "#", hasPlus: true },
     { name: "Documentation", href: "#", hasPlus: true },
-    { name: "Enterprise", href: "#", hasPlus: false },
-    { name: "Blog", href: "#", hasPlus: false },
+    { name: "Enterprise", href: "/enterprise", hasPlus: false },
+    { name: "Blog", href: "/blog", hasPlus: false },
   ];
 
   const megaMenuContent: Record<string, any> = {
@@ -50,7 +50,11 @@ export default function Header() {
             col: 1,
             href: "/capabilities/multi-store-ecommerce",
           },
-          { text: "Multi-tenant eCommerce", col: 1, href: "#" },
+          {
+            text: "Multi-tenant eCommerce",
+            col: 1,
+            href: "/capabilities/multi-tenant-ecommerce",
+          },
           {
             text: "Multi-region eCommerce",
             col: 2,
@@ -128,7 +132,7 @@ export default function Header() {
               icon: "/images/developers.svg",
               title: "Super for Developers",
               subtitle: "Quick links to all the resources",
-              href: "/developers",
+              href: "/super-commerce-for-developers",
             },
             {
               icon: "/images/github.svg",
@@ -541,7 +545,7 @@ export default function Header() {
               </button>
 
               <Link
-                href="#"
+                href="/get-started"
                 className="px-6 py-2 bg-[#D4E3F3] text-gray-900 rounded-full font-semibold hover:bg-[#c5d9ed] transition-colors text-[14px] whitespace-nowrap"
               >
                 Get started

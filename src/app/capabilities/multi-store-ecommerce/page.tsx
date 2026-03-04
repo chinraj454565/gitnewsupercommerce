@@ -45,6 +45,60 @@ const MultiStoreEcommerce = () => {
       icon: "🔍",
     },
   ];
+
+  const featuresData = [
+    {
+      title: "A multi-store platform",
+      description:
+        "Super Commerce is a ready-to-use multi-store starter that accelerates the delivery of your custom ecommerce functionality.",
+    },
+    {
+      title: "Free improvements",
+      description:
+        "Our open-source core continuously evolves, delivering free improvements, optimizations and new features over time.",
+    },
+    {
+      title: "Support available",
+      description:
+        "You can always rely on our support for implementation, improvements and long-term project growth.",
+    },
+  ];
+
+  const storiesData = [
+    {
+      tag: "B2B",
+      title:
+        "3form B2B product sample ordering enabled with a Super Commerce cart and checkout with an ERP integration",
+      description:
+        "3form website was a B2B product catalog with a contact form. The team embedded a cart and checkout experience to streamline sample ordering and integrated it with ERP to sync product data and existing user accounts.",
+      img: "/multi-store-ecommerce/story1.webp",
+    },
+    {
+      tag: "B2B",
+      title:
+        "Nuherbs launches a wholesale B2B ecommerce platform for dietary supplements",
+      description:
+        "Nuherbs is a vertically integrated herbal products company. They launched a wholesale B2B ecommerce platform with a custom mobile-first experience tailored for repeat and first-time buyers.",
+      img: "/multi-store-ecommerce/story2.webp",
+    },
+    {
+      tag: "B2B",
+      title:
+        "Packhelp uses Super Commerce for its B2B web-to-print ecommerce platform",
+      description:
+        "Packhelp built a successful startup without reinventing the wheel by using Super Commerce to power their customized B2B packaging platform and scalable ecommerce operations.",
+      img: "/multi-store-ecommerce/story3.webp",
+    },
+    {
+      tag: "DTC",
+      title:
+        "A home appliances brand trusted for over 100 years uses Super Commerce for its website",
+      description:
+        "A heritage home appliances brand serving millions of customers modernized its online presence using Super Commerce to deliver a reliable and scalable ecommerce platform.",
+      img: "/multi-store-ecommerce/story4.webp",
+    },
+  ];
+
   return (
     <>
       <CenteredHero
@@ -235,7 +289,7 @@ const MultiStoreEcommerce = () => {
           </div>
         </div>
       </section>
-      <section className="bg-[#F3F3F3] py-16 px-4 md:px-8 lg:px-12">
+      <section className="bg-[#F3F3F3] py-3 px-4 md:px-8 lg:px-12">
         <div className="max-w-7xl mx-auto">
           {/* Top Section: Screenshot Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
@@ -329,6 +383,74 @@ const MultiStoreEcommerce = () => {
           </div>
         </div>
       </section>
+      <section className="bg-[#F3F3F3] w-full ">
+        <div className="max-w-[1440px] mx-auto flex flex-col lg:flex-row items-center">
+          {/* Left Side: Content (with responsive padding) */}
+          <div className="w-full lg:w-1/2 px-6 md:px-12 lg:pl-20 lg:pr-10  lg:mb-0">
+            <h2 className="text-4xl md:text-4xl lg:text-5xl font-normal text-[#002147] leading-[1.1] mb-8">
+              Build Multi-Store Commerce Your Way
+            </h2>
+
+            <p className="text-lg md:text-xl font-light text-[#4a4a4a] leading-relaxed mb-10 max-w-xl">
+              Whether you&apos;re operating regionally, expanding into new
+              markets, or segmenting your catalog,
+              <span className="font-medium text-[#002147]">
+                {" "}
+                Super&apos;s
+              </span>{" "}
+              multi-store architecture gives you the control and flexibility to
+              grow without technical debt.
+            </p>
+
+            <div className="flex flex-wrap gap-4">
+              <button className="bg-[#05192d] text-white px-10 py-4 rounded-md font-medium text-base hover:bg-black transition-colors shadow-sm">
+                Get Started
+              </button>
+              <button className="bg-white text-[#05192d] border border-gray-200 px-10 py-4 rounded-md font-medium text-base hover:bg-gray-50 transition-colors shadow-sm">
+                Book a Demo
+              </button>
+            </div>
+          </div>
+
+          {/* Right Side: Image Section (Full width/Height of container) */}
+          <div className="w-full lg:w-1/2 flex items-stretch">
+            <div className="relative w-full aspect-[4/3] lg:aspect-auto lg:h-[400px] overflow-hidden">
+              {/* The image fills the entire right half of the grid. 
+              The 'padding' look in the screenshot is actually part of the graphic design.
+            */}
+              <Image
+                src="/multi-store-ecommerce/adminpanel.webp"
+                alt="Multi-Store Architecture Diagram"
+                fill
+                className="object-cover lg:object-contain"
+                priority
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="bg-[#F3F3F3] py-16 px-6 md:py-15">
+        <div className="max-w-4xl mx-auto text-center">
+          {/* Overline Text */}
+          <p className="text-[10px] md:text-xs font-bold tracking-[0.2em] text-[#002147] uppercase mb-6 md:mb-8">
+            What you get
+          </p>
+
+          {/* Main Headline */}
+          <h2 className="text-3xl md:text-5xl lg:text-4xl font-medium text-[#002147] leading-tight tracking-tight mb-6">
+            Multi-Store eCommerce Platform
+          </h2>
+
+          {/* Sub-headline */}
+          <p className="text-lg md:text-xl lg:text-lg font-light text-[#333333] opacity-90 max-w-3xl mx-auto">
+            Use Super commerce as a launchpad to quickly create multiple branded
+            storefronts, test new product lines, or segment your customers —
+            B2C, B2B, or any way that fits your business. Ideate, launch,
+            iterate, repeat.
+          </p>
+        </div>
+      </section>
+      <CommonToAll features={featuresData} stories={storiesData} />
     </>
   );
 };
