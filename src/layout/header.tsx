@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [announcementVisible, setAnnouncementVisible] = useState(true);
+
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
   const [activeSolutionsSubmenu, setActiveSolutionsSubmenu] =
     useState<string>("Capabilities");
@@ -211,55 +211,6 @@ export default function Header() {
   return (
     <header className="w-full sticky top-0 z-50">
       {/* ── Announcement Bar ── */}
-      {announcementVisible && (
-        <div
-          className="relative w-full h-10 flex items-center justify-center overflow-hidden"
-          style={{ backgroundColor: "#0d0d0d" }}
-        >
-          <div
-            className="absolute left-0 top-0 h-full w-64 opacity-30"
-            style={{
-              backgroundImage: `repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(255,255,255,0.3) 4px, rgba(255,255,255,0.3) 6px)`,
-            }}
-          />
-          <div
-            className="absolute right-0 top-0 h-full w-64 opacity-30"
-            style={{
-              backgroundImage: `repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(255,255,255,0.3) 4px, rgba(255,255,255,0.3) 6px)`,
-            }}
-          />
-          <Link
-            href="#"
-            className="relative z-10 flex items-center gap-2 text-white text-[13px] hover:opacity-80 transition-opacity"
-          >
-            <span>
-              <span className="font-bold">Super 5.3:</span>
-              <span className="font-normal">
-                {" "}
-                Price Lists, Customer Groups, Events & Subscribers Engine
-              </span>
-            </span>
-            <svg
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M7 17L17 7M17 7H7M17 7v10" />
-            </svg>
-          </Link>
-          <button
-            onClick={() => setAnnouncementVisible(false)}
-            className="absolute right-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors"
-          >
-            <X size={16} />
-          </button>
-        </div>
-      )}
 
       {/* ── Main Nav ── */}
       <div className="w-full bg-[#F7F7F6] border-b border-gray-200 relative">
