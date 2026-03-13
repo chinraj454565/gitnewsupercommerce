@@ -508,7 +508,7 @@ export default function Header() {
       {mobileMenuOpen && (
         <div
           className="lg:hidden fixed inset-0 bg-[#E8E8E8] z-40 overflow-y-auto"
-          style={{ top: announcementVisible ? "106px" : "66px" }}
+          style={{ top: "66px" }}
         >
           <div className="px-5 py-6 space-y-3 pb-32">
             {/* Search Bar */}
