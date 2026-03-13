@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useState } from "react";
 
 const Footer = () => {
-  // State to control the Floating Action Button (FAB) menu
+  // State to control the Floating Action Button (FAB) menu for mobile/desktop
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   const data = {
@@ -21,14 +21,11 @@ const Footer = () => {
       {/* --- Top CTA Section --- */}
       <section className="relative w-full pt-24 pb-0 px-6 overflow-hidden bg-[#F3F3F3]">
         <div className="max-w-4xl mx-auto text-center relative z-10">
-          {/* Main Heading */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-[#111827] leading-tight mb-10">
             {data.heading}
           </h2>
 
-          {/* Button Group */}
           <div className="flex flex-row justify-center gap-4 mb-20 w-full px-4 max-w-md mx-auto">
-            {/* Primary */}
             <Link
               href="#"
               className="flex-1 text-center bg-[#0B192E] text-white text-[16px] font-semibold hover:bg-[#132c4d] hover:rounded-[28px] transition-all duration-300 leading-[24px] px-[24px] py-[14px] rounded-[12px] hover:opacity-90"
@@ -36,7 +33,6 @@ const Footer = () => {
               {data.primaryBtnText}
             </Link>
 
-            {/* Secondary */}
             <Link
               href="#"
               className="flex-1 text-center bg-white text-[#0B192E] text-[16px] font-semibold hover:bg-[#132c4d] hover:text-white hover:rounded-[28px] transition-all duration-300 leading-[24px] px-[24px] py-[14px] rounded-[12px] border border-[#E5E7EB] shadow-sm"
@@ -46,7 +42,6 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Decorative Bottom Shape */}
         <div className="relative w-full h-[200px] md:h-[350px] mt-12">
           <Image
             src={data.bgImage}
@@ -59,14 +54,12 @@ const Footer = () => {
       </section>
 
       {/* --- Newsletter Section --- */}
-      <section className="bg-black text-white py-24 px-6 text-center">
+      <section className="bg-black text-white pt-24 pb-20 px-6 text-center">
         <div className="max-w-4xl mx-auto">
-          {/* Main Heading */}
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium mb-12 tracking-tight">
             Get the latest to your inbox
           </h2>
 
-          {/* Subscription Form */}
           <form className="flex items-center justify-center gap-3 sm:gap-4 mb-8 px-4">
             <input
               type="email"
@@ -82,7 +75,6 @@ const Footer = () => {
             </button>
           </form>
 
-          {/* Legal Disclaimer */}
           <div className="text-[10px] uppercase tracking-widest text-gray-400 font-bold">
             BY SUBSCRIBING YOU ACCEPT OUR <br className="sm:hidden" />
             <a
@@ -103,248 +95,251 @@ const Footer = () => {
       </section>
 
       {/* --- Main Footer Section --- */}
-      <footer className="bg-black text-white pt-16 pb-12 px-6 md:px-12 lg:px-24">
+      <footer className="bg-black text-white pt-1 pb-12 px-6 md:px-12 lg:px-24">
         <div className="max-w-[1400px] mx-auto">
-          {/* Top Bar with Logo and Get Started */}
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-20 gap-6">
-            <Link href="/" className="flex items-center">
-              <Image
-                src="/white-logo.png"
-                alt="SuperLabs Logo"
-                width={160}
-                height={45}
-                priority
-                className="object-contain"
-              />
-            </Link>
-            <Link
-              href="/get-started"
-              className="bg-white text-black px-6 py-2.5 rounded-lg font-bold hover:bg-gray-200 transition-colors text-[15px]"
-            >
-              Get started
-            </Link>
-          </div>
-
-          {/* Navigation Columns Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-6 xl:gap-8">
-            {/* Platform */}
-            <div>
-              <h4 className="text-white font-bold text-[17px] mb-6">
-                Platform
-              </h4>
-              <ul className="space-y-4">
-                <li>
-                  <Link
-                    href="/platform/features"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Features
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/platform/integrations"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Integrations
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/platform/demo"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Demo
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/platform/success-stories"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Success Stories
-                  </Link>
-                </li>
-              </ul>
+          <div className="flex flex-col lg:flex-row justify-between items-start gap-16 lg:gap-8 mb-24">
+            {/* Left Side: Logo & Get Started Button */}
+            <div className="w-full lg:w-1/4 flex flex-col items-start gap-8 flex-shrink-0">
+              <Link href="/">
+                <Image
+                  src="/white-logo.png"
+                  alt="SuperLabs Logo"
+                  width={200}
+                  height={50}
+                  priority
+                  className="object-contain"
+                />
+              </Link>
+              <Link
+                href="/get-started"
+                className="bg-white text-black px-6 py-2.5 rounded-lg font-bold hover:bg-gray-200 transition-colors text-[15px]"
+              >
+                Get started
+              </Link>
             </div>
 
-            {/* Capabilities */}
-            <div>
-              <h4 className="text-white font-bold text-[17px] mb-6">
-                Capabilities
-              </h4>
-              <ul className="space-y-4">
-                <li>
-                  <Link
-                    href="/capabilities/marketplace-ecommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Marketplace eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/capabilities/omnichannel-ecommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Omnichannel eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/capabilities/multi-warehouse-ecommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Multi-warehouse eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/capabilities/multi-store-ecommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Multi-store eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/capabilities/multi-region-ecommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Multi-region eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/capabilities/multi-tenant-ecommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Multi-tenant eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/capabilities/member-only-ecommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Member-only eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/capabilities/digital-product-sales"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Digital product sales
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/capabilities/headless-ecommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Headless eCommerce
-                  </Link>
-                </li>
-              </ul>
-            </div>
+            {/* Right Side: Navigation Columns aligned right - Fixed widths so text doesn't wrap */}
+            <div className="w-full lg:w-3/4 grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+              {/* Platform */}
+              <div>
+                <h4 className="text-white font-bold text-[17px] mb-6">
+                  Platform
+                </h4>
+                {/* Changed space-y-4 to space-y-3 for a tighter, cleaner list */}
+                <ul className="space-y-3">
+                  <li>
+                    <Link
+                      href="/platform/features"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Features
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/platform/integrations"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Integrations
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/platform/demo"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Demo
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/platform/success-stories"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Success Stories
+                    </Link>
+                  </li>
+                </ul>
+              </div>
 
-            {/* Use Cases */}
-            <div>
-              <h4 className="text-white font-bold text-[17px] mb-2">
-                Use cases
-              </h4>
-              <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest block mb-5">
-                By Business Model
-              </span>
-              <ul className="space-y-4">
-                <li>
-                  <Link
-                    href="/useCases/B2B-eCommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    B2B eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/useCases/B2B&DTC-eCommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    B2B & DTC eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/useCases/DTC-eCommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    DTC eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/useCases/Wholesale-eCommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Wholesale eCommerce
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/useCases/Business-Equipment-or-Supplies"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Business Equipment or Supplies
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/useCases/CBD-eCommerce"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    CBD eCommerce
-                  </Link>
-                </li>
-              </ul>
-            </div>
+              {/* Capabilities */}
+              <div>
+                <h4 className="text-white font-bold text-[17px] mb-6">
+                  Capabilities
+                </h4>
+                <ul className="space-y-3">
+                  <li>
+                    <Link
+                      href="/capabilities/marketplace-ecommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Marketplace eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/capabilities/omnichannel-ecommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Omnichannel eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/capabilities/multi-warehouse-ecommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Multi-warehouse eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/capabilities/multi-store-ecommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Multi-store eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/capabilities/multi-region-ecommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Multi-region eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/capabilities/multi-tenant-ecommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Multi-tenant eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/capabilities/member-only-ecommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Member-only eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/capabilities/digital-product-sales"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Digital product sales
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/capabilities/headless-ecommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Headless eCommerce
+                    </Link>
+                  </li>
+                </ul>
+              </div>
 
-            {/* Developers */}
-            <div>
-              <h4 className="text-white font-bold text-[17px] mb-6">
-                Developers
-              </h4>
-              <ul className="space-y-4">
-                <li>
-                  <Link
-                    href="/platform/integrations"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Documentation
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="https://github.com/spree"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Github
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-[15px] text-[#D1D1D1] hover:text-white transition-colors"
-                  >
-                    Slack
-                  </Link>
-                </li>
-              </ul>
+              {/* Use Cases */}
+              <div>
+                <h4 className="text-white font-bold text-[17px] mb-2">
+                  Use cases
+                </h4>
+                <span className="text-[10px] text-gray-500 font-bold uppercase tracking-widest block mb-5">
+                  By Business Model
+                </span>
+                <ul className="space-y-3">
+                  <li>
+                    <Link
+                      href="/useCases/B2B-eCommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      B2B eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/useCases/B2B&DTC-eCommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      B2B & DTC eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/useCases/DTC-eCommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      DTC eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/useCases/Wholesale-eCommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Wholesale eCommerce
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/useCases/Business-Equipment-or-Supplies"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Business Equipment or Supplies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="/useCases/CBD-eCommerce"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      CBD eCommerce
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Developers */}
+              <div>
+                <h4 className="text-white font-bold text-[17px] mb-6">
+                  Developers
+                </h4>
+                <ul className="space-y-3">
+                  <li>
+                    <Link
+                      href="/platform/integrations"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Documentation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="https://github.com/spree"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Github
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      href="#"
+                      className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
+                    >
+                      Slack
+                    </Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 
           {/* Legal Bottom Bar */}
-          <div className="pt-6 border-t border-[#333333] mt-16">
+          <div className="pt-6 border-t border-[#262626]">
             <p className="text-[14px] text-[#A3A3A3]">
               © 2020 - 2026 SuperLabs. Acta Non Verba.
             </p>
@@ -352,9 +347,9 @@ const Footer = () => {
         </div>
       </footer>
 
-      {/* --- State-Driven Floating Action Button (FAB) --- */}
+      {/* --- Floating Action Button (FAB) --- */}
       <div
-        className="fixed bottom-8 right-6 md:right-8 z-50 flex flex-col items-end"
+        className="fixed bottom-8 right-6 md:right-8 z-50 flex flex-col items-end group"
         onMouseEnter={() => setIsChatOpen(true)}
         onMouseLeave={() => setIsChatOpen(false)}
       >
@@ -366,9 +361,9 @@ const Footer = () => {
               : "opacity-0 translate-y-8 pointer-events-none"
           }`}
         >
-          {/* WhatsApp Icon (using <a> tag for external routing) */}
+          {/* WhatsApp Icon */}
           <a
-            href="https://wa.me/1234567890" // Add your real WhatsApp number here
+            href="https://wa.me/1234567890" // <-- Replace with your WhatsApp number
             target="_blank"
             rel="noopener noreferrer"
             className="w-[52px] h-[52px] rounded-[18px] bg-[#25D366] flex items-center justify-center hover:scale-105 transition-transform shadow-lg"
@@ -379,7 +374,7 @@ const Footer = () => {
             </svg>
           </a>
 
-          {/* Email Icon (using <a> tag for mailto) */}
+          {/* Email Icon */}
           <a
             href="mailto:hello@superecommerce.org"
             className="w-[52px] h-[52px] rounded-[18px] bg-gradient-to-b from-[#5DC4B8] to-[#425972] flex items-center justify-center hover:scale-105 transition-transform shadow-lg"
@@ -402,7 +397,7 @@ const Footer = () => {
             Lets Talk
           </div>
 
-          {/* Main Red Chat Icon - Toggles menu on mobile tap */}
+          {/* Main Red Chat Icon */}
           <button
             onClick={() => setIsChatOpen(!isChatOpen)}
             className="w-[56px] h-[56px] bg-black rounded-[20px] border border-red-600 shadow-[0_0_15px_rgba(220,38,38,0.4)] flex items-center justify-center transition-transform hover:scale-105"
