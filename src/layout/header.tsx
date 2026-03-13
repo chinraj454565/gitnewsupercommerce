@@ -535,111 +535,130 @@ export default function Header() {
               const hasMegaMenu = megaMenuContent[item.name];
               const isActive = activeMegaMenu === item.name;
 
-              return (
-                <div key={item.name}>
-                  <button
-                    className={`w-full flex items-center justify-between px-5 py-4 bg-white rounded-xl text-gray-900 text-left hover:bg-gray-50 transition-colors ${isActive ? "border-2 border-blue-500" : ""}`}
-                    onClick={() => {
-                      if (hasMegaMenu) {
+              // Conditionally render button (for dropdowns) or Link (for direct pages)
+              if (hasMegaMenu) {
+                return (
+                  <div key={item.name}>
+                    <button
+                      className={`w-full flex items-center justify-between px-5 py-4 bg-white rounded-xl text-gray-900 text-left hover:bg-gray-50 transition-colors ${isActive ? "border-2 border-blue-500" : ""}`}
+                      onClick={() => {
                         handleMobileNavClick(item.name);
-                      }
+                      }}
+                    >
+                      <span className="text-[17px] font-normal">
+                        {item.name}
+                      </span>
+                      {item.hasPlus && (
+                        <span className="text-[24px] font-light text-gray-600">
+                          {isActive ? "×" : "+"}
+                        </span>
+                      )}
+                    </button>
+
+                    {/* Mobile Mega Menu Content */}
+                    {isActive && (
+                      <div className="mt-3 bg-white rounded-xl p-4">
+                        {/* Solutions Menu */}
+                        {item.name === "Solutions" && (
+                          <div className="space-y-4">
+                            {megaMenuContent.Solutions.leftMenu.map(
+                              (menuItem: any) => (
+                                <div key={menuItem.label}>
+                                  <button
+                                    onClick={() =>
+                                      setActiveSolutionsSubmenu(menuItem.label)
+                                    }
+                                    className={`w-full text-left px-3 py-2 rounded-lg font-medium text-sm ${
+                                      activeSolutionsSubmenu === menuItem.label
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-700"
+                                    }`}
+                                  >
+                                    {menuItem.label}
+                                  </button>
+
+                                  {activeSolutionsSubmenu ===
+                                    menuItem.label && (
+                                    <div className="mt-2 ml-2 space-y-1">
+                                      {megaMenuContent.Solutions.submenus[
+                                        menuItem.label
+                                      ]?.map((subItem: any, idx: number) => (
+                                        <Link
+                                          key={idx}
+                                          href={subItem.href}
+                                          className="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg"
+                                          onClick={() => {
+                                            setMobileMenuOpen(false);
+                                            setActiveMegaMenu(null);
+                                          }}
+                                        >
+                                          {subItem.text}
+                                        </Link>
+                                      ))}
+                                    </div>
+                                  )}
+                                </div>
+                              ),
+                            )}
+                          </div>
+                        )}
+
+                        {/* Platform, Developers, Documentation Menus */}
+                        {(item.name === "Platform" ||
+                          item.name === "Developers" ||
+                          item.name === "Documentation") && (
+                          <div className="space-y-2">
+                            {megaMenuContent[item.name].sections[0].items.map(
+                              (menuItem: any, idx: number) => (
+                                <Link
+                                  key={idx}
+                                  href={menuItem.href}
+                                  className="flex items-start gap-3 p-3 hover:bg-gray-50 rounded-lg"
+                                  onClick={() => {
+                                    setMobileMenuOpen(false);
+                                    setActiveMegaMenu(null);
+                                  }}
+                                >
+                                  <div className="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg flex-shrink-0">
+                                    <img
+                                      src={menuItem.icon}
+                                      alt={menuItem.title}
+                                      className="w-5 h-5 object-contain"
+                                    />
+                                  </div>
+                                  <div className="flex-1">
+                                    <h4 className="font-semibold text-gray-900 text-sm">
+                                      {menuItem.title}
+                                    </h4>
+                                    <p className="text-xs text-gray-600 mt-0.5">
+                                      {menuItem.subtitle}
+                                    </p>
+                                  </div>
+                                </Link>
+                              ),
+                            )}
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                );
+              } else {
+                // Return Standard Link for Enterprise and Blog
+                return (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="w-full flex items-center px-5 py-4 bg-white rounded-xl text-gray-900 text-left hover:bg-gray-50 transition-colors block"
+                    onClick={() => {
+                      setMobileMenuOpen(false);
+                      setActiveMegaMenu(null);
                     }}
                   >
                     <span className="text-[17px] font-normal">{item.name}</span>
-                    {item.hasPlus && (
-                      <span className="text-[24px] font-light text-gray-600">
-                        {isActive ? "×" : "+"}
-                      </span>
-                    )}
-                  </button>
-
-                  {/* Mobile Mega Menu Content */}
-                  {isActive && hasMegaMenu && (
-                    <div className="mt-3 bg-white rounded-xl p-4">
-                      {/* Solutions Menu */}
-                      {item.name === "Solutions" && (
-                        <div className="space-y-4">
-                          {megaMenuContent.Solutions.leftMenu.map(
-                            (menuItem: any) => (
-                              <div key={menuItem.label}>
-                                <button
-                                  onClick={() =>
-                                    setActiveSolutionsSubmenu(menuItem.label)
-                                  }
-                                  className={`w-full text-left px-3 py-2 rounded-lg font-medium text-sm ${
-                                    activeSolutionsSubmenu === menuItem.label
-                                      ? "bg-gray-100 text-gray-900"
-                                      : "text-gray-700"
-                                  }`}
-                                >
-                                  {menuItem.label}
-                                </button>
-
-                                {activeSolutionsSubmenu === menuItem.label && (
-                                  <div className="mt-2 ml-2 space-y-1">
-                                    {megaMenuContent.Solutions.submenus[
-                                      menuItem.label
-                                    ]?.map((subItem: any, idx: number) => (
-                                      <Link
-                                        key={idx}
-                                        href={subItem.href}
-                                        className="block px-3 py-2 text-sm text-gray-600 hover:bg-gray-50 rounded-lg"
-                                        onClick={() => {
-                                          setMobileMenuOpen(false);
-                                          setActiveMegaMenu(null);
-                                        }}
-                                      >
-                                        {subItem.text}
-                                      </Link>
-                                    ))}
-                                  </div>
-                                )}
-                              </div>
-                            ),
-                          )}
-                        </div>
-                      )}
-
-                      {/* Platform, Developers, Documentation Menus */}
-                      {(item.name === "Platform" ||
-                        item.name === "Developers" ||
-                        item.name === "Documentation") && (
-                        <div className="space-y-2">
-                          {megaMenuContent[item.name].sections[0].items.map(
-                            (menuItem: any, idx: number) => (
-                              <Link
-                                key={idx}
-                                href={menuItem.href}
-                                className="flex items-start gap-3 p-3 hover:bg-gray-50 rounded-lg"
-                                onClick={() => {
-                                  setMobileMenuOpen(false);
-                                  setActiveMegaMenu(null);
-                                }}
-                              >
-                                <div className="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg flex-shrink-0">
-                                  <img
-                                    src={menuItem.icon}
-                                    alt={menuItem.title}
-                                    className="w-5 h-5 object-contain"
-                                  />
-                                </div>
-                                <div className="flex-1">
-                                  <h4 className="font-semibold text-gray-900 text-sm">
-                                    {menuItem.title}
-                                  </h4>
-                                  <p className="text-xs text-gray-600 mt-0.5">
-                                    {menuItem.subtitle}
-                                  </p>
-                                </div>
-                              </Link>
-                            ),
-                          )}
-                        </div>
-                      )}
-                    </div>
-                  )}
-                </div>
-              );
+                  </Link>
+                );
+              }
             })}
 
             {/* Get Started Button */}
