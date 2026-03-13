@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { X, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -10,7 +11,6 @@ export default function Header() {
   const [activeMegaMenu, setActiveMegaMenu] = useState<string | null>(null);
   const [activeSolutionsSubmenu, setActiveSolutionsSubmenu] =
     useState<string>("Capabilities");
-  const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   const navItems = [
     { name: "Platform", href: "#", hasPlus: true },
@@ -77,18 +77,46 @@ export default function Header() {
           },
         ],
         "Use Cases": [
-          { text: "B2B eCommerce", col: 1, href: "/useCases/B2B-eCommerce"},
-          { text: "B2B & DTC eCommerce", col: 1, href: "/useCases/B2B&DTC-eCommerce" },
+          { text: "B2B eCommerce", col: 1, href: "/useCases/B2B-eCommerce" },
+          {
+            text: "B2B & DTC eCommerce",
+            col: 1,
+            href: "/useCases/B2B&DTC-eCommerce",
+          },
           { text: "DTC eCommerce", col: 1, href: "/useCases/DTC-eCommerce" },
-          { text: "Wholesale eCommerce", col: 1, href: "/useCases/Wholesale-eCommerce" },
-          { text: "Business Equipment or Supplies", col: 1, href: "/useCases/Business-Equipment-or-Supplies" },
+          {
+            text: "Wholesale eCommerce",
+            col: 1,
+            href: "/useCases/Wholesale-eCommerce",
+          },
+          {
+            text: "Business Equipment or Supplies",
+            col: 1,
+            href: "/useCases/Business-Equipment-or-Supplies",
+          },
           { text: "CBD eCommerce", col: 1, href: "/useCases/CBD-eCommerce" },
         ],
         "Project Goals": [
-          { text: "Migrating from a SaaS", col: 1, href: "/Project-Goals/Migrating-from-a-SaaS" },
-          { text: "Migrating from legacy eCommerce", col: 1, href: "/Project-Goals/Migrating-from-legacy-eCommerce" },
-          { text: "A new eCommerce project", col: 1, href: "/Project-Goals/A-new-eCommerce-project" },
-          { text: "Older Super version upgrade", col: 1, href: "/Project-Goals/Older-Spree-version-upgrade" },
+          {
+            text: "Migrating from a SaaS",
+            col: 1,
+            href: "/Project-Goals/Migrating-from-a-SaaS",
+          },
+          {
+            text: "Migrating from legacy eCommerce",
+            col: 1,
+            href: "/Project-Goals/Migrating-from-legacy-eCommerce",
+          },
+          {
+            text: "A new eCommerce project",
+            col: 1,
+            href: "/Project-Goals/A-new-eCommerce-project",
+          },
+          {
+            text: "Older Super version upgrade",
+            col: 1,
+            href: "/Project-Goals/Older-Spree-version-upgrade",
+          },
         ],
       },
     },
@@ -146,12 +174,6 @@ export default function Header() {
               subtitle: "Join the Super community",
               href: "#",
             },
-            {
-              icon: "/images/releases.svg",
-              title: "Changelog",
-              subtitle: "Check out the latest",
-              href: "/developers/changelog",
-            },
           ],
         },
       ],
@@ -161,34 +183,10 @@ export default function Header() {
         {
           items: [
             {
-              icon: "/images/Dev_Guide.svg",
-              title: "Developer docs",
-              subtitle: "Everything you need to know",
-              href: "/documentation/developer-docs",
-            },
-            {
-              icon: "/images/API.svg",
-              title: "Ecommerce API",
-              subtitle: "For headless applications or mobile apps",
-              href: "/documentation/api",
-            },
-            {
-              icon: "/images/Dev_Guide.svg",
-              title: "User docs",
-              subtitle: "What is Super Commerce? What editions are there?",
-              href: "/documentation/user-docs",
-            },
-            {
               icon: "/images/integrations.svg",
               title: "Integrations",
               subtitle: "Everything your eCommerce needs",
               href: "/platform/integrations",
-            },
-            {
-              icon: "/images/use-cases.svg",
-              title: "Use Cases",
-              subtitle: "Marketplace, Multi-tenant, B2B eCommerce",
-              href: "#",
             },
           ],
         },
@@ -196,7 +194,7 @@ export default function Header() {
     },
   };
 
-  const handleNavClick = (itemName: string) => {
+  const handleMobileNavClick = (itemName: string) => {
     if (megaMenuContent[itemName]) {
       if (activeMegaMenu === itemName) {
         setActiveMegaMenu(null);
@@ -218,35 +216,18 @@ export default function Header() {
           className="relative w-full h-10 flex items-center justify-center overflow-hidden"
           style={{ backgroundColor: "#0d0d0d" }}
         >
-          {/* Diagonal stripe pattern - left side */}
           <div
             className="absolute left-0 top-0 h-full w-64 opacity-30"
             style={{
-              backgroundImage: `repeating-linear-gradient(
-                -45deg,
-                transparent,
-                transparent 4px,
-                rgba(255,255,255,0.3) 4px,
-                rgba(255,255,255,0.3) 6px
-              )`,
+              backgroundImage: `repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(255,255,255,0.3) 4px, rgba(255,255,255,0.3) 6px)`,
             }}
           />
-
-          {/* Diagonal stripe pattern - right side */}
           <div
             className="absolute right-0 top-0 h-full w-64 opacity-30"
             style={{
-              backgroundImage: `repeating-linear-gradient(
-                -45deg,
-                transparent,
-                transparent 4px,
-                rgba(255,255,255,0.3) 4px,
-                rgba(255,255,255,0.3) 6px
-              )`,
+              backgroundImage: `repeating-linear-gradient(-45deg, transparent, transparent 4px, rgba(255,255,255,0.3) 4px, rgba(255,255,255,0.3) 6px)`,
             }}
           />
-
-          {/* Announcement Text */}
           <Link
             href="#"
             className="relative z-10 flex items-center gap-2 text-white text-[13px] hover:opacity-80 transition-opacity"
@@ -258,7 +239,6 @@ export default function Header() {
                 Price Lists, Customer Groups, Events & Subscribers Engine
               </span>
             </span>
-            {/* Arrow icon */}
             <svg
               width="14"
               height="14"
@@ -272,12 +252,9 @@ export default function Header() {
               <path d="M7 17L17 7M17 7H7M17 7v10" />
             </svg>
           </Link>
-
-          {/* Close Button */}
           <button
             onClick={() => setAnnouncementVisible(false)}
             className="absolute right-4 top-1/2 -translate-y-1/2 text-white/60 hover:text-white transition-colors"
-            aria-label="Close announcement"
           >
             <X size={16} />
           </button>
@@ -292,7 +269,6 @@ export default function Header() {
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="lg:hidden p-2 text-gray-900 hover:text-gray-700 -ml-2"
-              aria-label="Toggle menu"
             >
               {mobileMenuOpen ? (
                 <X size={32} strokeWidth={2.5} />
@@ -315,18 +291,14 @@ export default function Header() {
             {/* Logo + Nav */}
             <div className="flex items-center gap-8 lg:flex-1">
               <Link href="/" className="flex items-center gap-2">
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  className="text-gray-900"
-                >
-                  <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z" />
-                </svg>
-                <span className="text-xl md:text-2xl font-bold text-gray-900">
-                  super
-                </span>
+                <Image
+                  src="/image.png"
+                  alt="SuperLabs Logo"
+                  width={140}
+                  height={40}
+                  priority
+                  className="object-contain"
+                />
               </Link>
 
               {/* Desktop Nav - Pill */}
@@ -334,180 +306,149 @@ export default function Header() {
                 {navItems.map((item) => {
                   const hasMegaMenu = megaMenuContent[item.name];
                   const isActive = activeMegaMenu === item.name;
-                  const className = `px-4 py-2 text-[14px] text-gray-700 hover:text-gray-900 hover:bg-white/60 rounded-full transition-colors flex items-center gap-1.5 whitespace-nowrap ${
-                    isActive ? "bg-white" : ""
+                  const className = `px-4 py-2 text-[14px] font-medium text-gray-700 hover:text-gray-900 hover:bg-white/60 rounded-full transition-colors flex items-center gap-1.5 whitespace-nowrap ${
+                    isActive ? "bg-white text-gray-900" : ""
                   }`;
 
                   if (hasMegaMenu) {
                     return (
-                      <div key={item.name} className="relative">
-                        <button
-                          onClick={() => handleNavClick(item.name)}
-                          className={className}
-                        >
+                      <div
+                        key={item.name}
+                        className="relative"
+                        onMouseEnter={() => setActiveMegaMenu(item.name)}
+                        onMouseLeave={() => setActiveMegaMenu(null)}
+                      >
+                        <Link href={item.href} className={className}>
                           {item.name}
                           {item.hasPlus && (
                             <span className="text-[16px] font-light">
                               {isActive ? "×" : "+"}
                             </span>
                           )}
-                        </button>
+                        </Link>
 
-                        {/* Mega Menu for this specific item */}
-                        {isActive && (
-                          <div className="absolute left-0 top-full mt-4 z-50">
-                            <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+                        {/* DESKTOP DROPDOWN */}
+                        <div
+                          className={`absolute left-0 top-full pt-4 z-50 transition-all duration-200 ${isActive ? "opacity-100 translate-y-0 visible" : "opacity-0 translate-y-2 invisible"}`}
+                        >
+                          <div className="bg-white rounded-xl shadow-[0_10px_40px_rgba(0,0,0,0.12)] border border-gray-100 overflow-hidden">
+                            {/* Solutions Menu Layout */}
+                            {item.name === "Solutions" && (
                               <div className="flex">
-                                {/* Solutions Menu - with Left Sidebar */}
-                                {item.name === "Solutions" && (
-                                  <>
-                                    {/* Left Menu */}
-                                    <div className="w-52 border-r border-gray-200 p-4 bg-gray-50">
-                                      {megaMenuContent.Solutions.leftMenu.map(
-                                        (menuItem: any) => (
-                                          <button
-                                            key={menuItem.label}
+                                <div className="w-52 border-r border-gray-100 p-4 bg-gray-50/50">
+                                  {megaMenuContent.Solutions.leftMenu.map(
+                                    (menuItem: any) => (
+                                      <button
+                                        key={menuItem.label}
+                                        onMouseEnter={() =>
+                                          setActiveSolutionsSubmenu(
+                                            menuItem.label,
+                                          )
+                                        }
+                                        className={`w-full flex items-center justify-between px-4 py-3 text-left rounded-lg transition-colors group mb-1 ${
+                                          activeSolutionsSubmenu ===
+                                          menuItem.label
+                                            ? "bg-white shadow-sm text-red-600 font-semibold"
+                                            : "text-gray-700 hover:bg-white font-medium"
+                                        }`}
+                                      >
+                                        <span className="text-[15px]">
+                                          {menuItem.label}
+                                        </span>
+                                        {menuItem.hasArrow && (
+                                          <ChevronRight
+                                            className={`w-4 h-4 ${activeSolutionsSubmenu === menuItem.label ? "text-red-600" : "text-gray-400 group-hover:text-gray-600"}`}
+                                          />
+                                        )}
+                                      </button>
+                                    ),
+                                  )}
+                                </div>
+                                <div className="w-[500px] p-6">
+                                  <div className="grid grid-cols-2 gap-x-8">
+                                    <div className="space-y-1">
+                                      {megaMenuContent.Solutions.submenus[
+                                        activeSolutionsSubmenu
+                                      ]
+                                        ?.filter(
+                                          (subItem: any) => subItem.col === 1,
+                                        )
+                                        .map((subItem: any, idx: number) => (
+                                          <Link
+                                            key={idx}
+                                            href={subItem.href}
+                                            className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-gray-50 rounded-lg transition-colors"
                                             onClick={() =>
-                                              setActiveSolutionsSubmenu(
-                                                menuItem.label,
-                                              )
+                                              setActiveMegaMenu(null)
                                             }
-                                            className={`w-full flex items-center justify-between px-4 py-3 text-left hover:bg-white rounded-lg transition-colors group mb-2 ${
-                                              activeSolutionsSubmenu ===
-                                              menuItem.label
-                                                ? "bg-white"
-                                                : ""
-                                            }`}
                                           >
-                                            <span className="text-sm font-medium text-gray-900">
-                                              {menuItem.label}
+                                            {subItem.text}
+                                          </Link>
+                                        ))}
+                                    </div>
+                                    <div className="space-y-1">
+                                      {megaMenuContent.Solutions.submenus[
+                                        activeSolutionsSubmenu
+                                      ]
+                                        ?.filter(
+                                          (subItem: any) => subItem.col === 2,
+                                        )
+                                        .map((subItem: any, idx: number) => (
+                                          <Link
+                                            key={idx}
+                                            href={subItem.href}
+                                            className="block px-3 py-2 text-sm text-gray-600 hover:text-red-600 hover:bg-gray-50 rounded-lg transition-colors"
+                                            onClick={() =>
+                                              setActiveMegaMenu(null)
+                                            }
+                                          >
+                                            {subItem.text}
+                                          </Link>
+                                        ))}
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            )}
+
+                            {/* Platform, Developers, Documentation Standard Layout (No right Chevrons) */}
+                            {(item.name === "Platform" ||
+                              item.name === "Developers" ||
+                              item.name === "Documentation") && (
+                              <div className="py-2 min-w-[280px]">
+                                {megaMenuContent[item.name].sections.map(
+                                  (section: any, idx: number) => (
+                                    <div key={idx} className="flex flex-col">
+                                      {section.items.map(
+                                        (menuItem: any, itemIdx: number) => (
+                                          <Link
+                                            key={itemIdx}
+                                            href={menuItem.href}
+                                            className="group flex items-center gap-3 px-6 py-3 hover:bg-gray-50 transition-colors"
+                                            onClick={() =>
+                                              setActiveMegaMenu(null)
+                                            }
+                                          >
+                                            <div className="w-8 h-8 flex items-center justify-center bg-gray-100 rounded-lg flex-shrink-0 group-hover:bg-white transition-colors">
+                                              <img
+                                                src={menuItem.icon}
+                                                alt={menuItem.title}
+                                                className="w-4 h-4 object-contain"
+                                              />
+                                            </div>
+                                            <span className="text-[15px] font-semibold text-gray-700 group-hover:text-red-600 transition-colors">
+                                              {menuItem.title}
                                             </span>
-                                            {menuItem.hasArrow && (
-                                              <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-gray-600" />
-                                            )}
-                                          </button>
+                                          </Link>
                                         ),
                                       )}
                                     </div>
-
-                                    {/* Right Content - Two Columns */}
-                                    <div className="w-[500px] p-6">
-                                      <div className="grid grid-cols-2 gap-x-8">
-                                        {/* Column 1 */}
-                                        <div className="space-y-1">
-                                          {megaMenuContent.Solutions.submenus[
-                                            activeSolutionsSubmenu
-                                          ]
-                                            ?.filter(
-                                              (subItem: any) =>
-                                                subItem.col === 1,
-                                            )
-                                            .map(
-                                              (subItem: any, idx: number) => (
-                                                <Link
-                                                  key={idx}
-                                                  href={subItem.href}
-                                                  className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
-                                                  onClick={() =>
-                                                    setActiveMegaMenu(null)
-                                                  }
-                                                >
-                                                  {subItem.text}
-                                                </Link>
-                                              ),
-                                            )}
-                                        </div>
-
-                                        {/* Column 2 */}
-                                        <div className="space-y-1">
-                                          {megaMenuContent.Solutions.submenus[
-                                            activeSolutionsSubmenu
-                                          ]
-                                            ?.filter(
-                                              (subItem: any) =>
-                                                subItem.col === 2,
-                                            )
-                                            .map(
-                                              (subItem: any, idx: number) => (
-                                                <Link
-                                                  key={idx}
-                                                  href={subItem.href}
-                                                  className="block px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 rounded-lg transition-colors"
-                                                  onClick={() =>
-                                                    setActiveMegaMenu(null)
-                                                  }
-                                                >
-                                                  {subItem.text}
-                                                </Link>
-                                              ),
-                                            )}
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </>
-                                )}
-
-                                {/* Platform, Developers, Documentation */}
-                                {(item.name === "Platform" ||
-                                  item.name === "Developers" ||
-                                  item.name === "Documentation") && (
-                                  <div className="w-[400px] p-6">
-                                    {megaMenuContent[item.name].sections.map(
-                                      (section: any, idx: number) => (
-                                        <div key={idx} className="space-y-1">
-                                          {section.items.map(
-                                            (
-                                              menuItem: any,
-                                              itemIdx: number,
-                                            ) => (
-                                              <Link
-                                                key={itemIdx}
-                                                href={menuItem.href}
-                                                onMouseEnter={() =>
-                                                  setHoveredItem(menuItem.title)
-                                                }
-                                                onMouseLeave={() =>
-                                                  setHoveredItem(null)
-                                                }
-                                                className="group flex items-start gap-3 px-3 py-3 hover:bg-gray-50 rounded-lg transition-colors"
-                                                onClick={() =>
-                                                  setActiveMegaMenu(null)
-                                                }
-                                              >
-                                                <div className="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-lg flex-shrink-0">
-                                                  <img
-                                                    src={menuItem.icon}
-                                                    alt={menuItem.title}
-                                                    className="w-5 h-5 object-contain"
-                                                  />
-                                                </div>
-
-                                                <div className="flex-1 min-w-0">
-                                                  <div className="flex items-center justify-between gap-2">
-                                                    <h4 className="font-semibold text-gray-900 text-sm">
-                                                      {menuItem.title}
-                                                    </h4>
-                                                    {hoveredItem ===
-                                                      menuItem.title && (
-                                                      <ChevronRight className="w-4 h-4 text-gray-600 flex-shrink-0" />
-                                                    )}
-                                                  </div>
-                                                  <p className="text-xs text-gray-600 mt-0.5">
-                                                    {menuItem.subtitle}
-                                                  </p>
-                                                </div>
-                                              </Link>
-                                            ),
-                                          )}
-                                        </div>
-                                      ),
-                                    )}
-                                  </div>
+                                  ),
                                 )}
                               </div>
-                            </div>
+                            )}
                           </div>
-                        )}
+                        </div>
                       </div>
                     );
                   } else {
@@ -527,30 +468,12 @@ export default function Header() {
 
             {/* Desktop Right Side */}
             <div className="hidden lg:flex items-center gap-3">
-              <button
-                className="flex items-center gap-2 px-4 py-2 bg-[#E8E8E8] rounded-full text-gray-600 hover:text-gray-900 hover:bg-[#d8d8d8] transition-colors"
-                aria-label="Search"
-              >
-                <svg
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  strokeWidth="2"
-                >
-                  <circle cx="11" cy="11" r="8" />
-                  <path d="m21 21-4.35-4.35" />
-                </svg>
-                <span className="text-[14px] text-gray-600">Search</span>
-              </button>
-
               <Link
                 href="/get-started"
                 className="px-6 py-2 bg-[#D4E3F3] text-gray-900 rounded-full font-semibold hover:bg-[#c5d9ed] transition-colors text-[14px] whitespace-nowrap"
               >
                 Get started
               </Link>
-
               <Link
                 href="https://github.com/spree"
                 className="flex items-center gap-2 text-gray-700 hover:text-gray-900"
@@ -630,7 +553,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu - same as before but with navigation */}
+      {/* ── Mobile Menu ── */}
       {mobileMenuOpen && (
         <div
           className="lg:hidden fixed inset-0 bg-[#E8E8E8] z-40 overflow-y-auto"
@@ -664,12 +587,10 @@ export default function Header() {
               return (
                 <div key={item.name}>
                   <button
-                    className={`w-full flex items-center justify-between px-5 py-4 bg-white rounded-xl text-gray-900 text-left hover:bg-gray-50 transition-colors ${
-                      isActive ? "border-2 border-blue-500" : ""
-                    }`}
+                    className={`w-full flex items-center justify-between px-5 py-4 bg-white rounded-xl text-gray-900 text-left hover:bg-gray-50 transition-colors ${isActive ? "border-2 border-blue-500" : ""}`}
                     onClick={() => {
                       if (hasMegaMenu) {
-                        handleNavClick(item.name);
+                        handleMobileNavClick(item.name);
                       }
                     }}
                   >
