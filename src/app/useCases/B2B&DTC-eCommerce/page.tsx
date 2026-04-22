@@ -1,11 +1,9 @@
 import Image from "next/image";
 import BrandLogoStrip from "@/components/reusablecomponent/brandlogostrip";
 
-
 export default function Page() {
   return (
     <main className="bg-gray-50 text-gray-900">
-
       {/* HERO */}
       <section className="py-24 text-center max-w-5xl mx-auto px-6">
         <p className="text-xs tracking-widest text-gray-500 mb-6 uppercase">
@@ -39,11 +37,10 @@ export default function Page() {
           </p>
 
           <h2 className="text-3xl font-semibold text-center mb-14">
-            This is how Super helps you manage B2B & DTC combined
+            This is how Super Commerce helps you manage B2B & DTC combined
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10">
-
             {/* 1 */}
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-lg font-semibold mb-4">
@@ -83,7 +80,6 @@ export default function Page() {
                 className="rounded-lg"
               />
             </div>
-
           </div>
         </div>
       </section>
@@ -91,7 +87,6 @@ export default function Page() {
       {/* SELL EVERYWHERE */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-
           <div>
             <h3 className="text-2xl font-semibold mb-4">
               Sell everything anywhere
@@ -112,14 +107,12 @@ export default function Page() {
             height={500}
             className="rounded-xl shadow-sm"
           />
-
         </div>
       </section>
 
       {/* CROSS CHANNEL */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-
           <Image
             src="/b2b-dtc/4.webp"
             alt="Cross-channel shopping"
@@ -133,25 +126,21 @@ export default function Page() {
               Cross-channel shopping
             </h3>
             <p className="text-gray-600 mb-6">
-              Customers buy in store and receive delivery, order online but
-              pick up in store.
+              Customers buy in store and receive delivery, order online but pick
+              up in store.
             </p>
             <button className="bg-black text-white px-6 py-3 rounded-md text-sm">
               Get started
             </button>
           </div>
-
         </div>
       </section>
 
       {/* PRODUCT SUBCATALOGS */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-
           <div>
-            <h3 className="text-2xl font-semibold mb-4">
-              Product subcatalogs
-            </h3>
+            <h3 className="text-2xl font-semibold mb-4">Product subcatalogs</h3>
             <p className="text-gray-600 mb-6">
               Each customer sees tailored product assortments.
             </p>
@@ -167,13 +156,11 @@ export default function Page() {
             height={500}
             className="rounded-xl shadow-sm"
           />
-
         </div>
       </section>
 
       {/* BENEFITS */}
       <BrandLogoStrip />
-
     </main>
   );
 }

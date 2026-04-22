@@ -113,7 +113,7 @@ export default function Header() {
             href: "/Project-Goals/A-new-eCommerce-project",
           },
           {
-            text: "Older Super version upgrade",
+            text: "Older Super commerce version upgrade",
             col: 1,
             href: "/Project-Goals/Older-Spree-version-upgrade",
           },
@@ -139,13 +139,13 @@ export default function Header() {
             {
               icon: "/images/demo.svg",
               title: "Demo",
-              subtitle: "Check out a live Super site",
+              subtitle: "Check out a live Super Commerce site",
               href: "/platform/demo",
             },
             {
               icon: "/images/success_stories.svg",
               title: "Success Stories",
-              subtitle: "5000+ businesses using Super",
+              subtitle: "5000+ businesses using Super Commerce",
               href: "/platform/success-stories",
             },
           ],
@@ -158,7 +158,7 @@ export default function Header() {
           items: [
             {
               icon: "/images/developers.svg",
-              title: "Super for Developers",
+              title: "Super commerce for Developers",
               subtitle: "Quick links to all the resources",
               href: "/super-commerce-for-developers",
             },

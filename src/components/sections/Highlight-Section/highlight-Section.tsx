@@ -12,7 +12,7 @@ const HighlightSection = () => {
 
         {/* Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-        super 5: The Biggest Release Ever
+          super commerce 5: The Biggest Release Ever
         </h2>
 
         {/* Content */}
@@ -28,7 +28,7 @@ const HighlightSection = () => {
             href="/spree-5"
             className="px-7 py-3 rounded-lg bg-slate-900 text-white font-semibold font-semibold hover:bg-[#132c4d] hover:rounded-[28px] transition-all duration-300 hover:bg-blue-800 transition"
           >
-            Check out super 5
+            Check out super commerce 5
           </Link>
 
           <Link

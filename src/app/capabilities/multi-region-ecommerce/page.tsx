@@ -77,7 +77,7 @@ const MultiRegionSection = () => {
     },
     {
       title:
-        "A video livestream shopping mobile app with a headless marketplace Super backend",
+        "A video livestream shopping mobile app with a headless marketplace Super Commerce backend",
       description:
         "Vidyodan uses Super Commerce headless backend connected through API to its mobile app available for both iOS and Android users. Payment systems are integrated into the live stream so that the users are able to complete the shopping experience without disconnecting.",
       tag: "Composable",

@@ -9,7 +9,8 @@ const Footer = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
 
   const data = {
-    heading: "Let's use super to build exactly what your business needs",
+    heading:
+      "Let's use super commerce to build exactly what your business needs",
     primaryBtnText: "Get started",
     secondaryBtnText: "See demo",
     bgImage:

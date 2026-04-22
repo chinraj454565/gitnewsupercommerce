@@ -130,8 +130,11 @@ const MultiStoreEcommerce = () => {
             <p className="text-xl font-light text-[#4a4a4a] leading-relaxed mb-10 max-w-xl">
               Whether you’re managing multiple brands, regional sites, or
               B2C/B2B storefronts under one roof,
-              <span className="font-medium text-[#002147]"> Super</span> makes
-              it easy to scale your operations without duplicating
+              <span className="font-medium text-[#002147]">
+                {" "}
+                Super Commerce
+              </span>{" "}
+              makes it easy to scale your operations without duplicating
               infrastructure or effort.
             </p>
 
@@ -147,9 +150,9 @@ const MultiStoreEcommerce = () => {
             Centralized Admin Capabilities
           </h2>
           <p className="text-lg md:text-xl font-light text-[#4a4a4a] leading-relaxed mb-10 max-w-3xl mx-auto">
-            Manage all your stores with ease. The Super admin gives you powerful
-            controls for provisioning, configuring, and operating multi-store
-            setups – all from one dashboard.
+            Manage all your stores with ease. The Super Commerce admin gives you
+            powerful controls for provisioning, configuring, and operating
+            multi-store setups – all from one dashboard.
           </p>
           <button className="bg-[#001429] text-white px-8 py-4 rounded-md font-medium text-sm md:text-base hover:bg-black transition-all shadow-lg">
             See Admin Capabilities
@@ -396,7 +399,7 @@ const MultiStoreEcommerce = () => {
               markets, or segmenting your catalog,
               <span className="font-medium text-[#002147]">
                 {" "}
-                Super&apos;s
+                Super Commerce&apos;s
               </span>{" "}
               multi-store architecture gives you the control and flexibility to
               grow without technical debt.

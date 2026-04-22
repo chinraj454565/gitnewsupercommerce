@@ -71,7 +71,7 @@ const DigitalProductSales = () => {
   const stories = [
     {
       title:
-        "Sirdar – British yarn manufacturer that dates back to 1880 chooses Super for its ecommerce platform",
+        "Sirdar – British yarn manufacturer that dates back to 1880 chooses Super Commerce for its ecommerce platform",
       description:
         "Sirdar offers over 100 yarn qualities and hundreds of new patterns (digital products) every year created by the in-house design team of more than twenty knitting and crochet experts.",
       tag: "DIGITAL PRODUCTS",
@@ -87,7 +87,7 @@ const DigitalProductSales = () => {
     },
     {
       title:
-        "Super powers a headless marketplace for digital downloads such as animation elements and GIFs",
+        "Super Commerce powers a headless marketplace for digital downloads such as animation elements and GIFs",
       description:
         "VideoPlasty is the only marketplace in the world for digital products such as Stock Animation, Stock GIFs & Motion Graphics. Users can choose from various product categories, such as character scenes or background loops, to make fantastic-looking videos without the hassle of creating graphics from scratch.",
       tag: "DIGITAL PRODUCTS",

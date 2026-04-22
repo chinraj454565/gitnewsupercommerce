@@ -11,7 +11,7 @@ const ContactPage = () => {
     {
       num: "01.",
       title: "An exploratory call",
-      desc: "Let's jump on a call to talk about your project requirements, timeline and budget expectations. We'll also answer any questions you might have and could do a full demo of the Super platform.",
+      desc: "Let's jump on a call to talk about your project requirements, timeline and budget expectations. We'll also answer any questions you might have and could do a full demo of the Super Commerce platform.",
     },
     {
       num: "02.",
@@ -26,7 +26,7 @@ const ContactPage = () => {
     {
       num: "04.",
       title: "Hand-over & maintenance",
-      desc: "Once delivery is completed and the project is stabilized, we could hand it over to your team or keep working with you to maintain, further develop, and optimize your Super-based platform.",
+      desc: "Once delivery is completed and the project is stabilized, we could hand it over to your team or keep working with you to maintain, further develop, and optimize your Super Commerce-based platform.",
     },
   ];
 

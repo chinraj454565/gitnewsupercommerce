@@ -1,17 +1,17 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const NumberAchievement: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'github' | 'slack'>('github');
+  const [activeTab, setActiveTab] = useState<"github" | "slack">("github");
 
   const stats = [
-    { value: '26,603', label: 'Commits' },
-    { value: '863', label: 'Contributors' },
-    { value: '7063', label: 'Slack members' },
-    { value: '15,001', label: 'Github stars' },
-    { value: '5,149', label: 'Forks' },
-    { value: '2,586,192', label: 'Downloads' },
+    { value: "26,603", label: "Commits" },
+    { value: "863", label: "Contributors" },
+    { value: "7063", label: "Slack members" },
+    { value: "15,001", label: "Github stars" },
+    { value: "5,149", label: "Forks" },
+    { value: "2,586,192", label: "Downloads" },
   ];
 
   return (
@@ -20,28 +20,28 @@ const NumberAchievement: React.FC = () => {
         {/* Mobile Layout (2 column grid) - Up to sm */}
         <div className="md:hidden">
           <h2 className="text-[32px] leading-tight font-light text-[#1a1a1a] mb-8">
-          super open-source
+            super commerce open-source
             <br />
             community
           </h2>
 
           <div className="flex gap-3 mb-12">
             <button
-              onClick={() => setActiveTab('github')}
+              onClick={() => setActiveTab("github")}
               className={`px-7 py-3 rounded-lg text-[15px] font-medium transition-colors ${
-                activeTab === 'github'
-                  ? 'bg-[#0d1117] text-white'
-                  : 'bg-white text-[#1a1a1a]'
+                activeTab === "github"
+                  ? "bg-[#0d1117] text-white"
+                  : "bg-white text-[#1a1a1a]"
               }`}
             >
               Github
             </button>
             <button
-              onClick={() => setActiveTab('slack')}
+              onClick={() => setActiveTab("slack")}
               className={`px-7 py-3 rounded-lg text-[15px] font-medium transition-colors ${
-                activeTab === 'slack'
-                  ? 'bg-[#0d1117] text-white'
-                  : 'bg-white text-[#1a1a1a]'
+                activeTab === "slack"
+                  ? "bg-[#0d1117] text-white"
+                  : "bg-white text-[#1a1a1a]"
               }`}
             >
               Slack
@@ -54,9 +54,7 @@ const NumberAchievement: React.FC = () => {
                 <div className="text-[40px] leading-none font-light text-[#1a1a1a] mb-2">
                   {stat.value}
                 </div>
-                <div className="text-[15px] text-[#666666]">
-                  {stat.label}
-                </div>
+                <div className="text-[15px] text-[#666666]">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -65,28 +63,28 @@ const NumberAchievement: React.FC = () => {
         {/* Tablet Layout (md) - Stacked with 2 columns */}
         <div className="hidden md:block lg:hidden">
           <h2 className="text-[36px] leading-tight font-light text-[#1a1a1a] mb-8">
-          super open-source
+            super commerce open-source
             <br />
             community
           </h2>
 
           <div className="flex gap-3 mb-12">
             <button
-              onClick={() => setActiveTab('github')}
+              onClick={() => setActiveTab("github")}
               className={`px-7 py-3.5 rounded-lg text-[15px] font-medium transition-colors ${
-                activeTab === 'github'
-                  ? 'bg-[#0d1117] text-white'
-                  : 'bg-white text-[#1a1a1a]'
+                activeTab === "github"
+                  ? "bg-[#0d1117] text-white"
+                  : "bg-white text-[#1a1a1a]"
               }`}
             >
               Github
             </button>
             <button
-              onClick={() => setActiveTab('slack')}
+              onClick={() => setActiveTab("slack")}
               className={`px-7 py-3.5 rounded-lg text-[15px] font-medium transition-colors ${
-                activeTab === 'slack'
-                  ? 'bg-[#0d1117] text-white'
-                  : 'bg-white text-[#1a1a1a]'
+                activeTab === "slack"
+                  ? "bg-[#0d1117] text-white"
+                  : "bg-white text-[#1a1a1a]"
               }`}
             >
               Slack
@@ -100,9 +98,7 @@ const NumberAchievement: React.FC = () => {
                 <div className="text-[48px] leading-none font-light text-[#1a1a1a] mb-2">
                   {stat.value}
                 </div>
-                <div className="text-[15px] text-[#666666]">
-                  {stat.label}
-                </div>
+                <div className="text-[15px] text-[#666666]">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -113,28 +109,28 @@ const NumberAchievement: React.FC = () => {
           {/* Left Sidebar */}
           <div className="flex-shrink-0 w-[280px] xl:w-[320px]">
             <h2 className="text-[38px] xl:text-[42px] leading-tight font-light text-[#1a1a1a] mb-10">
-            super open-source
+              super commerce open-source
               <br />
               community
             </h2>
 
             <div className="flex gap-4">
               <button
-                onClick={() => setActiveTab('github')}
+                onClick={() => setActiveTab("github")}
                 className={`px-8 py-3.5 rounded-lg text-[15px] font-medium transition-colors ${
-                  activeTab === 'github'
-                    ? 'bg-[#0d1117] text-white'
-                    : 'bg-white text-[#1a1a1a]'
+                  activeTab === "github"
+                    ? "bg-[#0d1117] text-white"
+                    : "bg-white text-[#1a1a1a]"
                 }`}
               >
                 Github
               </button>
               <button
-                onClick={() => setActiveTab('slack')}
+                onClick={() => setActiveTab("slack")}
                 className={`px-8 py-3.5 rounded-lg text-[15px] font-medium transition-colors ${
-                  activeTab === 'slack'
-                    ? 'bg-[#0d1117] text-white'
-                    : 'bg-white text-[#1a1a1a]'
+                  activeTab === "slack"
+                    ? "bg-[#0d1117] text-white"
+                    : "bg-white text-[#1a1a1a]"
                 }`}
               >
                 Slack
@@ -149,9 +145,7 @@ const NumberAchievement: React.FC = () => {
                 <div className="text-[48px] xl:text-[56px] leading-none font-light text-[#1a1a1a] mb-2">
                   {stat.value}
                 </div>
-                <div className="text-[15px] text-[#666666]">
-                  {stat.label}
-                </div>
+                <div className="text-[15px] text-[#666666]">{stat.label}</div>
               </div>
             ))}
           </div>

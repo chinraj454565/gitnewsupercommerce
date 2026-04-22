@@ -82,7 +82,7 @@ const MemberOnlySection = () => {
     {
       tag: "B2B",
       title:
-        "Gasido uses Super for its online B2B marketplace for industrial gases",
+        "Gasido uses Super Commerce for its online B2B marketplace for industrial gases",
       description:
         "Gas providers can list their offers on the website and customers can discover relevant suppliers through filters and purchase easily. Suppliers receive the orders through the marketplace and manage fulfillment directly.",
       img: "/MemberOnlySection/story2.webp",
@@ -98,7 +98,7 @@ const MemberOnlySection = () => {
     {
       tag: "B2B",
       title:
-        "Super powers an eCommerce B2B platform for the electronic components industry",
+        "Super Commerce powers an eCommerce B2B platform for the electronic components industry",
       description:
         "PCB industry companies use Super Commerce as the foundation for their ordering platform, enabling complex product configuration and scalable B2B workflows.",
       img: "/MemberOnlySection/story4.webp",

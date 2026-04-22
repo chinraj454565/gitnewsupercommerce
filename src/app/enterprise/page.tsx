@@ -55,7 +55,11 @@ const PRICING_SECTIONS: PricingSection[] = [
   {
     category: "Storefront management",
     features: [
-      { label: "Super Storefront API", community: true, enterprise: true },
+      {
+        label: "Super Commerce Storefront API",
+        community: true,
+        enterprise: true,
+      },
       { label: "Multi-store", community: true, enterprise: true },
       { label: "Multi-currency", community: true, enterprise: true },
       { label: "Multi-language", community: true, enterprise: true },
@@ -93,7 +97,7 @@ export default function PricingPage() {
             {/* Left Hero Title */}
             <div className="hidden md:block p-4">
               <p className="text-[10px] font-bold tracking-widest text-gray-400 mb-2 uppercase">
-                Super
+                Super Commerce
               </p>
               <h1 className="text-3xl font-light leading-tight">
                 Make your pick:

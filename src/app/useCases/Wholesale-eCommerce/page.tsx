@@ -1,12 +1,9 @@
 import Image from "next/image";
 import BrandLogoStrip from "@/components/reusablecomponent/brandlogostrip";
 
-
-
 export default function Page() {
   return (
     <main className="bg-gray-50 text-gray-900">
-
       {/* HERO */}
       <section className="py-24  text-center max-w-5xl mx-auto px-6">
         <p className="text-xs tracking-widest text-gray-500 mb-6 uppercase">
@@ -18,8 +15,8 @@ export default function Page() {
         </h1>
 
         <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-          Differentiate product categories, pricing and discounts per
-          customer or customer segment
+          Differentiate product categories, pricing and discounts per customer
+          or customer segment
         </p>
 
         <div className="flex justify-center gap-4">
@@ -35,17 +32,15 @@ export default function Page() {
       {/* CAPABILITIES */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-
           <p className="text-xs uppercase tracking-widest text-gray-500 text-center mb-6">
             Capabilities
           </p>
 
           <h2 className="text-3xl font-semibold text-center mb-14">
-            This is how Super helps you grow your wholesale business
+            This is how Super Commerce helps you grow your wholesale business
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10">
-
             {/* 1 */}
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-lg font-semibold mb-4">
@@ -107,7 +102,6 @@ export default function Page() {
                 className="rounded-lg"
               />
             </div>
-
           </div>
         </div>
       </section>
@@ -124,8 +118,8 @@ export default function Page() {
           </h2>
 
           <p className="text-gray-600 max-w-2xl mx-auto mb-16">
-            Sell to many customer segments through separate storefronts
-            with the right assortment of products
+            Sell to many customer segments through separate storefronts with the
+            right assortment of products
           </p>
         </div>
       </section>
@@ -133,7 +127,6 @@ export default function Page() {
       {/* SURVEY CUSTOMERS */}
       <section className="pb-24">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-
           <div>
             <h3 className="text-2xl font-semibold mb-4">
               Survey customers on sign up
@@ -153,14 +146,12 @@ export default function Page() {
             height={500}
             className="rounded-xl shadow-sm"
           />
-
         </div>
       </section>
 
       {/* MULTIPLE STORES */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-
           <Image
             src="/dtc-b2c/4.webp"
             alt="Multiple stores"
@@ -170,29 +161,23 @@ export default function Page() {
           />
 
           <div>
-            <h3 className="text-2xl font-semibold mb-4">
-              Multiple stores
-            </h3>
+            <h3 className="text-2xl font-semibold mb-4">Multiple stores</h3>
             <p className="text-gray-600 mb-6">
-              Each store with its own layout and branding, products,
-              currency and languages
+              Each store with its own layout and branding, products, currency
+              and languages
             </p>
             <button className="bg-black text-white px-6 py-3 rounded-md text-sm">
               Get started
             </button>
           </div>
-
         </div>
       </section>
 
       {/* PRODUCT SUBCATALOGS */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-
           <div>
-            <h3 className="text-2xl font-semibold mb-4">
-              Product subcatalogs
-            </h3>
+            <h3 className="text-2xl font-semibold mb-4">Product subcatalogs</h3>
             <p className="text-gray-600 mb-6">
               Each customer sees their expected product subcatalog
             </p>
@@ -208,13 +193,11 @@ export default function Page() {
             height={500}
             className="rounded-xl shadow-sm"
           />
-
         </div>
       </section>
 
-       {/* BENEFITS */}
-       <BrandLogoStrip />
-
+      {/* BENEFITS */}
+      <BrandLogoStrip />
     </main>
   );
 }

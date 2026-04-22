@@ -114,14 +114,15 @@ export default function MarketplaceEcommercePage() {
   const stories = [
     {
       title:
-        "Scout & Nimble uses Super for its online marketplace for shoppable designer rooms and home decor",
+        "Scout & Nimble uses Super Commerce for its online marketplace for shoppable designer rooms and home decor",
       description:
         "Scout & Nimble is a social commerce platform that works with interior designers to curate shoppable rooms utilizing the available software & products. Since it's an online marketplace, everything is customizable for the consumer.",
       tag: "DTC",
       img: "/marketplace-ecommerce/image11.webp",
     },
     {
-      title: "Garmentory luxury fashion marketplace grows 400% on Super",
+      title:
+        "Garmentory luxury fashion marketplace grows 400% on Super Commerce",
       description:
         "Garmentory is the leading fashion marketplace dedicated to independent boutiques and emerging fashion designers that provides consumers with a new and curated shopping experience.",
       tag: "DTC",
@@ -230,8 +231,8 @@ export default function MarketplaceEcommercePage() {
                 Admin Capabilities
               </h2>
               <p className="text-[17px] md:text-[20px] text-[#4A5568] max-w-[850px] mx-auto mb-10 font-light leading-relaxed">
-                Super provides comprehensive multi-vendor marketplace management
-                tools with a robust Admin dashboard.
+                Super Commerce provides comprehensive multi-vendor marketplace
+                management tools with a robust Admin dashboard.
               </p>
               <button className="bg-[#0A1A2F] text-white px-10 py-4 rounded-md text-[16px] font-semibold hover:bg-[#162A45] transition-all">
                 See Admin Capabilities
@@ -447,7 +448,7 @@ export default function MarketplaceEcommercePage() {
                 <p className="text-gray-600 leading-relaxed">
                   A white-label Shopify sales channel app syncs products,
                   orders, shipments, cancellations, and refunds automatically
-                  between Shopify and the Super marketplace.
+                  between Shopify and the Super Commerce marketplace.
                 </p>
               </div>
             </div>
@@ -668,7 +669,7 @@ export default function MarketplaceEcommercePage() {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <h2 className="text-3xl md:text-4xl font-light text-[#001D3D] text-center mb-16">
-            Super Success Stories
+            Super Commerce Success Stories
           </h2>
 
           {/* Stories Grid */}

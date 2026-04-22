@@ -42,7 +42,7 @@ const SuperHero = () => {
   const cardData: Card[] = [
     {
       id: 1,
-      title: "Need a Super developer to get started?",
+      title: "Need a Super Commerce developer to get started?",
       description: "Talk to us about hiring a team for your project.",
     },
     {
@@ -63,7 +63,7 @@ const SuperHero = () => {
       icon: Zap,
     },
     {
-      title: "Super Features",
+      title: "Super Commerce Features",
       desc: "A quick visual overview.",
       icon: Grid,
     },
@@ -78,12 +78,12 @@ const SuperHero = () => {
       icon: Settings,
     },
     {
-      title: "Super Integrations",
+      title: "Super Commerce Integrations",
       desc: "For headless applications or mobile apps.",
       icon: Share2,
     },
     {
-      title: "Super Success Stories",
+      title: "Super Commerce Success Stories",
       desc: "They speak for themselves.",
       icon: Target,
     },

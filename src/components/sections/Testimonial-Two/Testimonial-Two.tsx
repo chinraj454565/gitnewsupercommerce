@@ -40,7 +40,7 @@ const TestimonialTwo = () => {
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Title */}
           <h2 className="text-3xl md:text-4xl font-semibold text-center text-gray-900 mb-20">
-            This is what you can build with super
+            This is what you can build with super commerce
           </h2>
 
           {/* Grid */}
@@ -72,7 +72,7 @@ const TestimonialTwo = () => {
       <section className="bg-[#F7F7F6] py-15 px-6 text-center">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-4xl md:text-2xl lg:text-4xl text-[#0B192E] mb-10 tracking-tight">
-          super success stories
+            super commerce success stories
           </h2>
           <button className="bg-[#0B192E] text-white px-10 py-4 rounded-lg font-semibold hover:bg-[#132c4d] hover:rounded-[28px] transition-all duration-300 text-lg hover:bg-opacity-90 transition-all">
             See all Stories

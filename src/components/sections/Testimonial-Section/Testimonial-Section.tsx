@@ -110,7 +110,7 @@ const Testimonial = () => {
           SOLUTION
         </p>
         <h2 className="text-[26px] sm:text-[32px] lg:text-[38px] font-light text-[#111827] leading-[1.2] mb-8 sm:mb-10 lg:mb-12 tracking-tight px-4">
-        super is modular and customizable so you can build exactly{" "}
+          super commerce is modular and customizable so you can build exactly{" "}
           <br className="hidden lg:block" />
           what you need
         </h2>

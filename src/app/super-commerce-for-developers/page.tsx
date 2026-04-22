@@ -24,7 +24,7 @@ const DeveloperResources = () => {
     },
     {
       icon: <Puzzle size={20} />,
-      title: "Super Integrations",
+      title: "Super Commerce Integrations",
       desc: "Use these or build your own",
     },
     {
@@ -39,17 +39,17 @@ const DeveloperResources = () => {
     },
     {
       icon: <LayoutGrid size={20} />,
-      title: "Super Features",
+      title: "Super Commerce Features",
       desc: "A quick visual overview",
     },
     {
       icon: <PlayCircle size={20} />,
-      title: "Super Live Demo",
+      title: "Super Commerce Live Demo",
       desc: "See it in action",
     },
     {
       icon: <Target size={20} />,
-      title: "Super Success Stories",
+      title: "Super Commerce Success Stories",
       desc: "They speak for themselves",
     },
   ];
@@ -156,7 +156,7 @@ const DeveloperResources = () => {
             <h2 className="text-3xl font-semibold mb-4">Stay in the loop</h2>
             <p className="text-gray-600 mb-12">
               Join the community and learn how other people get the most out of
-              Super.
+              Super Commerce.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">

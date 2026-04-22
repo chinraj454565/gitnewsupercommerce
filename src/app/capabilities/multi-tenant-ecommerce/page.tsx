@@ -243,7 +243,7 @@ const MultiTenantEcommerce = () => {
 
             <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-8">
               {/* "Super" replaces "Spree" here */}
-              Super admin has ultimate oversight and control over tenant stores
+              Super Commerce admin has ultimate oversight and control over tenant stores
               as well as ability to provision tenant stores, enforce global
               policies, and configure the level of autonomy each tenant enjoys.
             </p>

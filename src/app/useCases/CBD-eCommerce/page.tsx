@@ -1,12 +1,9 @@
 import Image from "next/image";
 import BrandLogoStrip from "@/components/reusablecomponent/brandlogostrip";
 
-
-
 export default function Page() {
   return (
     <main className="bg-gray-50 text-gray-900">
-
       {/* HERO */}
       <section className="py-24 text-center max-w-5xl mx-auto px-6">
         <p className="text-xs tracking-widest text-gray-500 mb-6 uppercase">
@@ -34,17 +31,15 @@ export default function Page() {
       {/* CAPABILITIES */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-
           <p className="text-xs uppercase tracking-widest text-gray-500 text-center mb-6">
             Capabilities
           </p>
 
           <h2 className="text-3xl font-semibold text-center mb-14">
-            Super helps you sell more CBD products online
+            Super Commerce helps you sell more CBD products online
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10">
-
             {/* Card 1 */}
             <div className="bg-white p-8 rounded-xl shadow-sm">
               <h3 className="text-lg font-semibold mb-4">
@@ -108,7 +103,6 @@ export default function Page() {
                 className="rounded-lg"
               />
             </div>
-
           </div>
         </div>
       </section>
@@ -124,15 +118,14 @@ export default function Page() {
         </h2>
 
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Sell online and through multiple Points of Sale with one dashboard
-          to rule them all and in sync
+          Sell online and through multiple Points of Sale with one dashboard to
+          rule them all and in sync
         </p>
       </section>
 
       {/* ONE PAYMENT PROCESSOR */}
       <section className="pb-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-
           <div>
             <h3 className="text-2xl font-semibold mb-4">
               One payment processor
@@ -153,14 +146,12 @@ export default function Page() {
             height={500}
             className="rounded-xl shadow-sm"
           />
-
         </div>
       </section>
 
       {/* CROSS CHANNEL */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-
           <Image
             src="/dtc-b2c/4.webp"
             alt="Cross channel"
@@ -174,29 +165,28 @@ export default function Page() {
               Cross-channel shopping
             </h3>
             <p className="text-gray-600 mb-6">
-              Customers buy in-store but get orders delivered. Order online
-              but choose in-store pick-up. Re-ordering and post-purchase
-              service across all channels.
+              Customers buy in-store but get orders delivered. Order online but
+              choose in-store pick-up. Re-ordering and post-purchase service
+              across all channels.
             </p>
             <button className="bg-black text-white px-6 py-3 rounded-md text-sm">
               Get started
             </button>
           </div>
-
         </div>
       </section>
 
       {/* CENTRALIZED MANAGEMENT */}
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
-
           <div>
             <h3 className="text-2xl font-semibold mb-4">
               Centralized management
             </h3>
             <p className="text-gray-600 mb-6">
-              Manage products, orders, payments across all channels.
-              Get omnichannel insights to drive loyalty with discounts or gift cards.
+              Manage products, orders, payments across all channels. Get
+              omnichannel insights to drive loyalty with discounts or gift
+              cards.
             </p>
             <button className="bg-black text-white px-6 py-3 rounded-md text-sm">
               Get started
@@ -210,12 +200,10 @@ export default function Page() {
             height={500}
             className="rounded-xl shadow-sm"
           />
-
         </div>
       </section>
       {/* BENEFITS */}
       <BrandLogoStrip />
-
     </main>
   );
 }

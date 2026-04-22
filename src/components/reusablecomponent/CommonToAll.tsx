@@ -56,7 +56,7 @@ const CommonToAll = ({ features = [], stories = [] }: CommonToAllProps) => {
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <h2 className="text-3xl md:text-4xl font-light text-[#001D3D] text-center mb-16">
-            Super Success Stories
+            Super Commerce Success Stories
           </h2>
 
           {/* Stories Grid */}

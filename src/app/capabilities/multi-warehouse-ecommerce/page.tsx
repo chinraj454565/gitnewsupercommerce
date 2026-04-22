@@ -74,7 +74,7 @@ const MultiWarehouseEcommerce = () => {
       title:
         "3form B2B product sample ordering enabled with a Super Commerce cart and checkout with an ERP integration",
       description:
-        "3form website was a B2B product catalog with a contact form. The 3form decided to use Super to embed a cart and checkout experience to streamline product sample ordering. Super Commerce was integrated with an ERP to sync the product catalog and allow all 3form customers to use their existing user accounts. The project was delivered within 12 weeks by team augmentation of the 3form in-house dev team.",
+        "3form website was a B2B product catalog with a contact form. The 3form decided to use Super Commerce to embed a cart and checkout experience to streamline product sample ordering. Super Commerce was integrated with an ERP to sync the product catalog and allow all 3form customers to use their existing user accounts. The project was delivered within 12 weeks by team augmentation of the 3form in-house dev team.",
       tag: "B2B",
       img: "/multi-warehouse-ecommerce/story1.webp",
     },
@@ -90,15 +90,15 @@ const MultiWarehouseEcommerce = () => {
       title:
         "300-year-old luxury retailer Fortnum & Mason gets 20% more customers with Super Commerce site",
       description:
-        "Fortnum & Mason chose Super for its fully responsive eCommerce site to ensure that online customers enjoy the same high-quality experience that the brand has been providing in store for over 300 years.",
+        "Fortnum & Mason chose Super Commerce for its fully responsive eCommerce site to ensure that online customers enjoy the same high-quality experience that the brand has been providing in store for over 300 years.",
       tag: "DTC",
       img: "/multi-warehouse-ecommerce/story3.webp",
     },
     {
       title:
-        "Mitchells chose Super for their luxury fashion eCommerce store with human touch",
+        "Mitchells chose Super Commerce for their luxury fashion eCommerce store with human touch",
       description:
-        "Mitchells sets the example here with their Super based eCommerce platform that provides customers with exquisite user experience. This way they feel welcome, valued and appreciated at every click, just like they do when visiting Mitchells brick and mortar stores.",
+        "Mitchells sets the example here with their Super Commerce based eCommerce platform that provides customers with exquisite user experience. This way they feel welcome, valued and appreciated at every click, just like they do when visiting Mitchells brick and mortar stores.",
       tag: "DTC",
       img: "/multi-warehouse-ecommerce/story4.webp",
     },
