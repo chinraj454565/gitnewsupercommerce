@@ -162,12 +162,12 @@ export default function Header() {
               subtitle: "Quick links to all the resources",
               href: "/super-commerce-for-developers",
             },
-            {
-              icon: "/images/github.svg",
-              title: "Github",
-              subtitle: "Get the source code",
-              href: "https://github.com/spree",
-            },
+            // {
+            //   icon: "/images/github.svg",
+            //   title: "Github",
+            //   subtitle: "Get the source code",
+            //   href: "https://github.com/spree",
+            // },
             {
               icon: "/images/slack.svg",
               title: "Slack",
@@ -425,7 +425,7 @@ export default function Header() {
               >
                 Get started
               </Link>
-              <Link
+              {/* <Link
                 href="https://github.com/spree"
                 className="flex items-center gap-2 text-gray-700 hover:text-gray-900"
                 target="_blank"
@@ -443,7 +443,7 @@ export default function Header() {
                   />
                 </svg>
                 <span className="text-[14px] font-semibold">15k</span>
-              </Link>
+              </Link> */}
             </div>
 
             {/* Tablet Right Side */}
@@ -463,7 +463,7 @@ export default function Header() {
                   <path d="m21 21-4.35-4.35" />
                 </svg>
               </button>
-              <Link
+              {/* <Link
                 href="https://github.com/spree"
                 className="flex items-center gap-2 text-gray-700 hover:text-gray-900 bg-white px-3 py-1.5 rounded-lg"
                 target="_blank"
@@ -481,11 +481,11 @@ export default function Header() {
                   />
                 </svg>
                 <span className="text-sm font-semibold">15k</span>
-              </Link>
+              </Link> */}
             </div>
 
             {/* Mobile Right Side */}
-            <Link
+            {/* <Link
               href="https://github.com/spree"
               className="md:hidden flex items-center gap-2 text-gray-700 bg-white px-3 py-1.5 rounded-lg"
               target="_blank"
@@ -499,7 +499,7 @@ export default function Header() {
                 />
               </svg>
               <span className="text-sm font-semibold">15k</span>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>

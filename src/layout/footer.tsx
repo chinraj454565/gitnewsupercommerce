@@ -317,14 +317,14 @@ const Footer = () => {
                       Documentation
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="https://github.com/spree"
                       className="text-[14px] text-[#A3A3A3] hover:text-white transition-colors lg:whitespace-nowrap block"
                     >
                       Github
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href="#"
