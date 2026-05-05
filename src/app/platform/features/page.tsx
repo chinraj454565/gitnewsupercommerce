@@ -141,7 +141,7 @@ export default function FeaturesPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1 bg-gradient-to-br from-gray-100 to-gray-50 rounded-2xl p-6 border border-gray-200">
                 <img
-                  src="https://spreecommerce.org/wp-content/uploads/2024/07/features-multistore-1024x575.webp"
+                  src="/platform/feature1.png"
                   alt="Multi-store"
                   className="w-full h-auto rounded-lg"
                 />

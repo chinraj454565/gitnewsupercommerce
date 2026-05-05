@@ -112,7 +112,7 @@ const MultiStoreEcommerce = () => {
           <div className="w-full lg:w-3/5 xl:w-2/3">
             <div className="bg-[#EAEAEA] border border-gray-100 rounded-lg shadow-sm relative overflow-hidden aspect-[16/10]">
               <Image
-                src="/multi-store-ecommerce/secondSection.webp" // Replace with your actual wide diagram asset
+                src="/multi-store-ecommerce/multistore.png" // Replace with your actual wide diagram asset
                 alt="Super Dashboard Admin Panel Diagram"
                 fill
                 className="object-cover"

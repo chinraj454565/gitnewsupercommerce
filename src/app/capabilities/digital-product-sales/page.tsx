@@ -33,13 +33,13 @@ const DigitalProductSales = () => {
       title: "File upload",
       description:
         "Upload, host, and process your files in ways that's cost efficient and stimulates upselling",
-      image: "/digital-product-sales/feature1.webp",
+      image: "/digital-product-sales/digital_sale.png",
     },
     {
       title: "File discovery UX",
       description:
         "Tailor your shopping experience to the file type eg. audio, video, photos or any other",
-      image: "/digital-product-sales/feature2.webp",
+      image: "/digital-product-sales/digital_sale1.png",
       reverse: true,
     },
     {

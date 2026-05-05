@@ -17,8 +17,7 @@ const Testimonial = () => {
       title: "Multi-region & Multi-store",
       description:
         "Manage unlimited products and variants individually or in bulk. Categorize, label, add custom attributes. Generate gift cards or discounts with a robust promo rule engine",
-      imageSrc:
-        "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-eCommerce-multi-region-1024x431-1.webp",
+      imageSrc: "/home/home_image5.png",
       imageAlt: "Multi-store dashboard",
       isWide: true,
     },
@@ -95,8 +94,7 @@ const Testimonial = () => {
       title: "API & Integrations",
       description:
         "Connect spree to any custom user interface eg. a Next.js storefront or a mobile app. Integrate spree with any system using APIs or webhooks, eg. WMS, ERP, CRM.",
-      imageSrc:
-        "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-eCommerce-Ecommerce-headless-API-1024x431-1.webp",
+      imageSrc: "/home/home_image8.png",
       imageAlt: "API and integrations code and cart preview",
       reverse: false,
     },

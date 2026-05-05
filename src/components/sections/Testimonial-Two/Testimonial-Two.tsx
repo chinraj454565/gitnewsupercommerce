@@ -19,7 +19,7 @@ const features = [
   {
     title: "Multi-store eCommerce",
     desc: "Enable multiple brands, customers or resellers to run separate stores with centralized or separate product catalogs.",
-    img: "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-Multi-store-storefront.webp",
+    img: "/home/home_image6.png",
   },
   {
     title: "Multi-region eCommerce",
@@ -29,7 +29,7 @@ const features = [
   {
     title: "Headless eCommerce API",
     desc: "Connect spree to your ecosystem in an API-first mode to power custom shopping experiences with your WMS, ERP, or CRM.",
-    img: "https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-Composable-Headless-eCommerce.webp",
+    img: "/home/home_image7.png",
   },
 ];
 

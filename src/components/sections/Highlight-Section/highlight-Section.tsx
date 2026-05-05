@@ -44,7 +44,7 @@ const HighlightSection = () => {
           {/* Card 1 */}
           <div>
             <img
-              src="https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-new-admin-dashboard.webp"
+              src="/home/home_image1.png"
               alt="Admin Dashboard"
               className="w-full object-contain"
             />
@@ -62,7 +62,7 @@ const HighlightSection = () => {
           {/* Card 2 */}
           <div>
             <img
-              src="https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-no-code-storefront-1.webp"
+              src="/home/home_image2.png"
               alt="No Code Storefront"
               className="w-full object-contain"
             />
@@ -80,7 +80,7 @@ const HighlightSection = () => {
           {/* Card 3 */}
           <div>
             <img
-              src="https://spreecommerce.org/wp-content/uploads/2025/12/Spree-Commerce-open-source-stripe-connect-klaviyo.webp"
+              src="/home/home_image3.webp"
               alt="Integrations"
               className="w-full object-contain"
             />

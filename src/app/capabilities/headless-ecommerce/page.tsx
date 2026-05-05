@@ -29,7 +29,7 @@ const HeadlessEcommerce = () => {
     title: "Ecommerce API",
     description:
       "Take advantage of all commerce features in API-only mode. Build storefronts, mobile apps, or backend systems using a flexible and powerful API.",
-    image: "/headless-ecommerce/feature1.webp",
+    image: "/headless-ecommerce/headless.png",
     buttonText: "Ecommerce API docs",
   };
 

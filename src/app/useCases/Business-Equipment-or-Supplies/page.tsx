@@ -155,7 +155,7 @@ export default function Page() {
       <section className="py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
           <Image
-            src="/dtc-b2c/4.webp"
+            src="/dtc-b2c/dtc2.png"
             alt="Customize checkout"
             width={700}
             height={500}

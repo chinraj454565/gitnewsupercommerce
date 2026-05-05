@@ -147,7 +147,7 @@ export default function BlogPage() {
               <div className="flex items-center justify-center gap-2 grayscale opacity-50">
                 <div className="w-6 h-6 bg-[#1A2B49] rounded-sm" />
                 <span className="font-bold text-xl tracking-tighter text-[#1A2B49]">
-                  super
+                  super commerce
                 </span>
               </div>
             </div>

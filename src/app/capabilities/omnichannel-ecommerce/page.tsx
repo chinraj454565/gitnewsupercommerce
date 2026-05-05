@@ -19,31 +19,31 @@ const OmnichannelSection = () => {
   const stories = [
     {
       title:
-        "Ratio Clothing uses Spree Commerce for its online platform with customized shirts and a machine learning fitting algorithm",
+        "Ratio Clothing uses Super Commerce for its online platform with customized shirts and a machine learning fitting algorithm",
       description:
-        "Ratio Clothing uses Spree Commerce for its online platform with customized shirts and a machine learning fitting algorithm.",
+        "Ratio Clothing uses Super Commerce for its online platform with customized shirts and a machine learning fitting algorithm.",
       tag: "DTC",
       img: "/omnichannel-ecommerce/image5.webp",
     },
     {
       title:
-        "300-year-old luxury retailer Fortnum & Mason gets 20% more customers with Spree Commerce",
+        "300-year-old luxury retailer Fortnum & Mason gets 20% more customers with Super Commerce",
       description:
-        "Fortnum & Mason chose Spree for its fully responsive eCommerce site to ensure that online customers enjoy the same high quality experience that the brand has been providing in store for over 300 years.",
+        "Fortnum & Mason chose Super Commerce for its fully responsive eCommerce site to ensure that online customers enjoy the same high quality experience that the brand has been providing in store for over 300 years.",
       tag: "DTC",
       img: "/omnichannel-ecommerce/image6.webp",
     },
     {
       title:
-        "Mitchells chose Spree for their luxury fashion eCommerce store with human touch",
+        "Mitchells chose Super Commerce for their luxury fashion eCommerce store with human touch",
       description:
-        "Mitchells sets the example here with their Spree based eCommerce platform that provides their customers with exquisite user experience. This way they feel welcome, valued and appreciated at every click just like they do when visiting Mitchells brick and mortar stores.",
+        "Mitchells sets the example here with their Super Commerce based eCommerce platform that provides their customers with exquisite user experience. This way they feel welcome, valued and appreciated at every click just like they do when visiting Mitchells brick and mortar stores.",
       tag: "DTC",
       img: "/omnichannel-ecommerce/image7.webp",
     },
     {
       title:
-        "Huckberry redefines eCommerce for the outdoor adventurers with Spree, storytelling and data-driven marketing",
+        "Huckberry redefines eCommerce for the outdoor adventurers with Super Commerce, storytelling and data-driven marketing",
       description:
         "Huckberry, which is described as equal parts store, magazine and inspiration, was founded by friends Andy Forch and Richard Greiner in 2011. They wanted to create a shopping and lifestyle experience for young men who live in the city but have a passion for the outdoors.",
       tag: "DTC",
@@ -54,7 +54,7 @@ const OmnichannelSection = () => {
     {
       title: "PoS and online payments",
       description:
-        "Switch to Square payment terminals for your PoS locations and use it for Spree-driven online sales B2C or B2B.",
+        "Switch to Square payment terminals for your PoS locations and use it for Super Commerce-driven online sales B2C or B2B.",
     },
     {
       title: "Delightful shopping",
