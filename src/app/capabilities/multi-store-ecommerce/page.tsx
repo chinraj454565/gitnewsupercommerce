@@ -104,7 +104,7 @@ const MultiStoreEcommerce = () => {
       <CenteredHero
         label="Multi-Store eCommerce"
         title="Multi-Store eCommerce"
-        description="Manage multiple storefronts from a single Spree admin with shared or isolated catalogs, customers, and payment methods."
+        description="Manage multiple storefronts from a single Super Commerce admin with shared or isolated catalogs, customers, and payment methods."
       />
       <section className="bg-[#F3F3F3] py-16 px-4 md:px-10">
         <div className="max-w-[90rem] mx-auto flex flex-col lg:flex-row items-center gap-10 lg:gap-16">

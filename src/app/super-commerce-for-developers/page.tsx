@@ -58,22 +58,22 @@ const DeveloperResources = () => {
     {
       category: "B2B ECOMMERCE",
       date: "FEBRUARY 12, 2026",
-      title: "Spree Commerce: The Best Open-Source Shopify Alternative",
+      title: "Super Commerce: The Best Open-Source Shopify Alternative",
     },
     {
       category: "OPEN-SOURCE ECOMMERCE",
       date: "FEBRUARY 02, 2026",
-      title: "Spree Commerce 5.3: Customer Groups — Segmentation",
+      title: "Super Commerce 5.3: Customer Groups — Segmentation",
     },
     {
       category: "OPEN-SOURCE ECOMMERCE",
       date: "FEBRUARY 02, 2026",
-      title: "Spree Commerce 5.3: New Pricing Engine and Price Lists",
+      title: "Super Commerce 5.3: New Pricing Engine and Price Lists",
     },
     {
       category: "OPEN-SOURCE ECOMMERCE",
       date: "JANUARY 27, 2026",
-      title: "Announcing Spree Commerce 5.3 with Price Lists",
+      title: "Announcing Super Commerce 5.3 with Price Lists",
     },
     {
       category: "OPEN-SOURCE ECOMMERCE",

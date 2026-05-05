@@ -6,16 +6,16 @@ const SuccessStoriesGrid = () => {
     {
       tag: "COMPOSABLE",
       title:
-        "GoDaddy chose spree for their multi-tenant Ecommerce solution for small businesses",
+        "GoDaddy chose super commerce for their multi-tenant Ecommerce solution for small businesses",
       description:
-        "GoDaddy uses spree Commerce open source software for its multi-tenant eCommerce solution for small businesses with 10s of thousands of unique live storefronts.",
+        "GoDaddy uses Super Commerce open source software for its multi-tenant eCommerce solution for small businesses with 10s of thousands of unique live storefronts.",
       image:
         "https://spreecommerce.org/wp-content/uploads/2024/07/godaddy-stores-1024x538.webp",
     },
     {
       tag: "DTC",
       title:
-        "One of the hottest NFL teams is using spree for their fan merchandise online store",
+        "One of the hottest NFL teams is using Super Commerce for their fan merchandise online store",
       description:
         "The New England Patriots' ProShop is the official fan merchandise online store of the team. Cool features include a wishlist, shoppable gift guides, and jersey builders.",
       image:
@@ -24,18 +24,18 @@ const SuccessStoriesGrid = () => {
     {
       tag: "B2B",
       title:
-        "3form B2B product sample ordering enabled with a spree Commerce cart and checkout with an ERP integration",
+        "3form B2B product sample ordering enabled with a Super Commerce cart and checkout with an ERP integration",
       description:
-        "3form website was a B2B product catalog with a contact form. Then 3form decided to use spree to embedded a cart and checkout experience to streamline product sample ordering. spree Commerce was integrated with an ERP to sync the product catalog and allow all 3form customers to use their existing user accounts.",
+        "3form website was a B2B product catalog with a contact form. Then 3form decided to use Super Commerce to embedded a cart and checkout experience to streamline product sample ordering. Super Commerce was integrated with an ERP to sync the product catalog and allow all 3form customers to use their existing user accounts.",
       image:
         "https://spreecommerce.org/wp-content/uploads/2024/07/3form-B2B-SpreeCommerce-1024x650-41KB.webp",
     },
     {
       tag: "B2B",
       title:
-        "Craftsman, the American iconic tool brand, uses spree Commerce for its online store with over 1,200 professional-grade tools",
+        "Craftsman, the American iconic tool brand, uses Super Commerce for its online store with over 1,200 professional-grade tools",
       description:
-        "Craftsman's website is built with spree Commerce, a flexible and scalable open-source e-commerce software. On craftsman.com you will find some really cool features like a sticky photo gallery on the product page as well as product reviews and a “Find locally” option.",
+        "Craftsman's website is built with Super Commerce, a flexible and scalable open-source e-commerce software. On craftsman.com you will find some really cool features like a sticky photo gallery on the product page as well as product reviews and a “Find locally” option.",
       image:
         "https://spreecommerce.org/wp-content/uploads/2024/07/Craftsman-uses-Spree-Commerce-for-its-online-store-1024x461-1.webp",
     },

@@ -28,7 +28,7 @@ const features = [
   },
   {
     title: "Headless eCommerce API",
-    desc: "Connect spree to your ecosystem in an API-first mode to power custom shopping experiences with your WMS, ERP, or CRM.",
+    desc: "Connect Super Commerce to your ecosystem in an API-first mode to power custom shopping experiences with your WMS, ERP, or CRM.",
     img: "/home/home_image7.png",
   },
 ];

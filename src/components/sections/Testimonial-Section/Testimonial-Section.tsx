@@ -93,7 +93,7 @@ const Testimonial = () => {
     {
       title: "API & Integrations",
       description:
-        "Connect spree to any custom user interface eg. a Next.js storefront or a mobile app. Integrate spree with any system using APIs or webhooks, eg. WMS, ERP, CRM.",
+        "Connect Super Commerce to any custom user interface eg. a Next.js storefront or a mobile app. Integrate Super Commerce with any system using APIs or webhooks, eg. WMS, ERP, CRM.",
       imageSrc: "/home/home_image8.png",
       imageAlt: "API and integrations code and cart preview",
       reverse: false,

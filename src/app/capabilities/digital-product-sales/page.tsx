@@ -133,7 +133,7 @@ const DigitalProductSales = () => {
 
           {/* Main Headline */}
           <h2 className="text-3xl md:text-5xl lg:text-4xl font-medium text-[#002147] leading-tight tracking-tight mb-6">
-            Build an innovative digital product business on Spree
+            Build an innovative digital product business on Super Commerce
           </h2>
 
           {/* Sub-headline */}

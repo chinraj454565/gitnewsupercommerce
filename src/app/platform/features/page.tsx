@@ -246,10 +246,10 @@ export default function FeaturesPage() {
                   Search & Discovery
                 </h2>
                 <p className="text-base text-gray-700 leading-relaxed">
-                  Enable your customer's to use the built-in Spree search and
-                  product filtering on the category pages. Or leverage Algolia
-                  to show users what they need with AI search that understands
-                  them.
+                  Enable your customer's to use the built-in Super Commerce
+                  search and product filtering on the category pages. Or
+                  leverage Algolia to show users what they need with AI search
+                  that understands them.
                 </p>
               </div>
             </div>

@@ -243,9 +243,10 @@ const MultiTenantEcommerce = () => {
 
             <p className="text-base md:text-lg text-slate-600 leading-relaxed mb-8">
               {/* "Super" replaces "Spree" here */}
-              Super Commerce admin has ultimate oversight and control over tenant stores
-              as well as ability to provision tenant stores, enforce global
-              policies, and configure the level of autonomy each tenant enjoys.
+              Super Commerce admin has ultimate oversight and control over
+              tenant stores as well as ability to provision tenant stores,
+              enforce global policies, and configure the level of autonomy each
+              tenant enjoys.
             </p>
 
             {/* Action Button */}
@@ -424,7 +425,7 @@ const MultiTenantEcommerce = () => {
           </h1>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             {formatText(
-              "Use spree as a spring-board to quickly deliver a multi-tenant platform that fits your use case and existing infrastructure.",
+              "Use Super Commerce as a spring-board to quickly deliver a multi-tenant platform that fits your use case and existing infrastructure.",
             )}
           </p>
         </section>
